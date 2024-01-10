@@ -14,7 +14,7 @@ from sklearn.metrics import accuracy_score
 import wandb
 import pprint
 from pathlib import Path
-
+import pickle
 
 def main(args):
     train_dataset, valid_dataset, test_dataset = load_wrench_data(data_root=args.dataset_path,
@@ -25,6 +25,7 @@ def main(args):
                                                                   max_ngram=args.max_ngram,
                                                                   revert_index=args.lf_type == "keyword",
                                                                   append_cdr=args.append_cdr)
+    # 1st step : load data
 
     print(f"Dataset path: {args.dataset_path}, name: {args.dataset_name}")
     print_dataset_stats(train_dataset, split="train")
@@ -41,6 +42,7 @@ def main(args):
         args.dataset_name = "medical_abstract"
 
     rng = np.random.default_rng(args.seed)
+    runs_and_lfs = {}
     for run in range(args.runs):
         if args.save_wandb:
             wandb.init(
@@ -383,6 +385,10 @@ def main(args):
                 wandb.run.summary["test_auc"] = np.nan
 
             wandb.finish()
+            runs_and_lfs[run] = lfs
+
+    with open('runs_and_lfs.pkl', 'wb') as file:
+        pickle.dump(runs_and_lfs, file)
 
 
 if __name__ == '__main__':

@@ -390,7 +390,7 @@ class ChatGPTLFAgent:
         # other arguments
         self.display = kwargs.get("display", True)
         self.seed = kwargs.get("seed", 0)
-        self.sleep_time = kwargs.get("sleep_time",0)
+        self.sleep_time = kwargs.get("sleep_time",20)
         self.rng = default_rng(self.seed)
         self.system_prompt, self.example_prompt = create_prompt(self.kwargs["dataset_name"], self.valid_dataset,
                                                                 example_per_class=self.example_per_class,
@@ -403,9 +403,10 @@ class ChatGPTLFAgent:
                                                                             explanation=self.return_explanation,
                                                                             lf_type=self.lf_type)
         if self.display:
-            print("ChatGPT system prompt:")
+            print("Init: ChatGPT system prompt:")
             print(self.system_prompt)
-            print("Example prompt:")
+            print("Init: Example prompt:")
+            print(self.example_prompt)
 
 
 
@@ -452,6 +453,8 @@ class ChatGPTLFAgent:
             example_string = self.example_prompt
 
         user_prompt = create_user_prompt(example_string, self.kwargs["dataset_name"], self.train_dataset, query_idx)
+        print("Create_LF: user prompt")
+        print(user_prompt)
         candidate_lfs = []
         if self.lf_type == "keyword":
             messages = [
@@ -473,7 +476,7 @@ class ChatGPTLFAgent:
             for j in range(self.n_completion):
                 response_content = response['choices'][j]["message"]["content"]
                 if self.display:
-                    print("Response {}: {}\n".format(j, response_content))
+                    print("Create_LF: Response {}: {}\n".format(j, response_content))
 
                 response_dict = extract_response(response_content)
                 label = response_dict["label"]

@@ -44,7 +44,7 @@
     },
     {
       "idx": 15,
-      "data": "Echa un vistazo a la remezcla! / Check out the remix!  MILEY CYRUS - WRECKING BALL (THE HOUSE OF EDM REMIX)  MILEY CYRUS - WRECKING BALL (VINCENT T. REMIX)  ...click, enlace, suscríbase! / ...click, link, subscribe!",
+      "data": "Echa un vistazo a la remezcla! / Check out the remix!  MILEY CYRUS - WRECKING BALL (THE HOUSE OF EDM REMIX)  MILEY CYRUS - WRECKING BALL (VINCENT T. REMIX)  ...click, enlace, suscr\u00edbase! / ...click, link, subscribe!",
       "label": 1,
       "keywords": "check, click, link, subscribe",
       "explanation": "the comment guide the viewer to look into a provided content not related to the video, which shows it is a spam."
@@ -71,7 +71,7 @@
       "explanation": "the comment ask the viewer to check out another playlist not related to the video, therefore it is a spam comment."
     }
   ],
-  "sms":[
+  "sms": [
     {
       "idx": 121,
       "data": "u don't remember that old commercial?",
@@ -145,11 +145,11 @@
   ],
   "imdb": [
     {
-        "idx": 2258,
-        "data": "now please don t start calling me names like unpatriotic weirdo and more the very length of this movie hours is its biggest mistake no editing at all seems like j p dutta fell in love with his project too much even lagaan was hours long but it was entertaining and gave a message as well it s based on true incidents and real people kudos to it but were the repetitive war scenes really needed on top of it the focus constantly shifted from one battalion squadron to another and it was impossible to keep a track of them all between the skirmishes there were songs about loneliness lovesickness and related stuff there were chummy conversations in the beginning it gave some relief from the violence but became so monotonous later that one could even correctly predict nature of the forthcoming talk why were the soldiers walking around as if they were lions in jungle fully unaware that enemy was lurking somewhere near and when they were shot it elicited sympathy but it seemed unmindful of them to be so cocksure of their safety in the first place music was melodious and the lyrics were soulful but did not fit with the movie better to listen to them on the soundtrack rather than in the movie acting was the saving grace from seasoned veterans like sanjay dutt and ajay devgan to relative newbies like abhishek bachchan and akshaye khanna everyone acted like a pro manoj bajpai and ashutosh rana deserve a special mention for lightening up the mood whenever necessary dialogues ranged from brilliant from madhuri with love to illogical monotonous pakistan se zyada musalman hindusthan mein hain and the expletive spree consisting of all the mcs bcs cs and f words wasn t really required loc kargil attempts to provide a fitting tribute to the brave indian soldiers but tries too hard and ultimately fails indian soldiers surely deserve a better tribute",
-        "label": 0,
-        "keywords": "mistake, monotonous, fails",
-        "explanation": "the review express negative attitube to the movie as the war scenes are too monotonous."
+      "idx": 2258,
+      "data": "now please don t start calling me names like unpatriotic weirdo and more the very length of this movie hours is its biggest mistake no editing at all seems like j p dutta fell in love with his project too much even lagaan was hours long but it was entertaining and gave a message as well it s based on true incidents and real people kudos to it but were the repetitive war scenes really needed on top of it the focus constantly shifted from one battalion squadron to another and it was impossible to keep a track of them all between the skirmishes there were songs about loneliness lovesickness and related stuff there were chummy conversations in the beginning it gave some relief from the violence but became so monotonous later that one could even correctly predict nature of the forthcoming talk why were the soldiers walking around as if they were lions in jungle fully unaware that enemy was lurking somewhere near and when they were shot it elicited sympathy but it seemed unmindful of them to be so cocksure of their safety in the first place music was melodious and the lyrics were soulful but did not fit with the movie better to listen to them on the soundtrack rather than in the movie acting was the saving grace from seasoned veterans like sanjay dutt and ajay devgan to relative newbies like abhishek bachchan and akshaye khanna everyone acted like a pro manoj bajpai and ashutosh rana deserve a special mention for lightening up the mood whenever necessary dialogues ranged from brilliant from madhuri with love to illogical monotonous pakistan se zyada musalman hindusthan mein hain and the expletive spree consisting of all the mcs bcs cs and f words wasn t really required loc kargil attempts to provide a fitting tribute to the brave indian soldiers but tries too hard and ultimately fails indian soldiers surely deserve a better tribute",
+      "label": 0,
+      "keywords": "mistake, monotonous, fails",
+      "explanation": "the review express negative attitube to the movie as the war scenes are too monotonous."
     },
     {
       "idx": 1510,
@@ -307,7 +307,7 @@
       "explanation": "The statement describes a case of a newborn with massive tricuspid regurgitation, atrial flutter, congestive heart failure, and a high serum lithium level. It also mentions that there have been other cases of cardiac disease among infants exposed to lithium compounds during the first trimester of pregnancy. However, it only conclude that lithium carbonate causes neurologic depression, cyanosis, and cardiac arrhythmia when consumed prior to delivery. There is no clear evidence that lithium causes congestive heart failure from the study."
     },
     {
-      "idx":886,
+      "idx": 886,
       "data_snippet": "The present data indicate that the determination of malondialdehyde, oxypurines, and nucleosides in peripheral blood, may be used to monitor the metabolic alterations of tissues occurring during ischemic phenomena.(ABSTRACT TRUNCATED AT 250 WORDS). Does nucleosides cause ischemic?",
       "data": "Time dependence of plasma malondialdehyde, oxypurines, and nucleosides during incomplete cerebral ischemia in the rat. ncomplete cerebral ischemia (30 min) was induced in the rat by bilaterally clamping the common carotid arteries. Peripheral venous blood samples were withdrawn from the femoral vein four times (once every 5 min) before ischemia (0 time) and 5, 15, and 30 min after ischemia. Plasma extracts were analyzed by a highly sensitive high-performance liquid chromatographic method for the direct determination of malondialdehyde, oxypurines, and nucleosides. During ischemia, a time-dependent increase of plasma oxypurines and nucleosides was observed. Plasma malondialdehyde, which was present in minimal amount at zero time (0.058 mumol/liter plasma; SD 0.015), increased after 5 min of ischemia, resulting in a fivefold increase after 30 min of carotid occlusion (0.298 mumol/liter plasma; SD 0.078). Increased plasma malondialdehyde was also recorded in two other groups of animals subjected to the same experimental model, one receiving 20 mg/kg b.w. of the cyclooxygenase inhibitor acetylsalicylate intravenously immediately before ischemia, the other receiving 650 micrograms/kg b.w. of the hypotensive drug nitroprusside at a flow rate of 103 microliters/min intravenously during ischemia, although in this latter group malondialdehyde was significantly higher. The present data indicate that the determination of malondialdehyde, oxypurines, and nucleosides in peripheral blood, may be used to monitor the metabolic alterations of tissues occurring during ischemic phenomena.(ABSTRACT TRUNCATED AT 250 WORDS).Does nucleosides cause ischemic?",
       "label": 0,
@@ -398,7 +398,7 @@
     },
     {
       "idx": 1179,
-      "data": "These results suggest that LTD4 increases Aβ peptide burden via activation of CysLT(1)R, which further affects APP levels and activity of β- and γ-secretases via the NF-κB pathway. What is the relationship between CysLT(1)R and LTD4?",
+      "data": "These results suggest that LTD4 increases A\u03b2 peptide burden via activation of CysLT(1)R, which further affects APP levels and activity of \u03b2- and \u03b3-secretases via the NF-\u03baB pathway. What is the relationship between CysLT(1)R and LTD4?",
       "label": 2,
       "keywords": "activation",
       "regex": "{{A}}.{0,100}increa.{0,100}{{B}}[SEP]{{A}}.{0,100}activ.{0,100}{{B}}[SEP]{{B}}.{0,100}increa.{0,100}{{A}}[SEP]{{B}}.{0,100}activ.{0,100}{{A}}",
@@ -414,18 +414,18 @@
     },
     {
       "idx": 957,
-      "data": "Although generally highly specific for angiotensin II type 1 receptors, some ARBs, particularly telmisartan, are partial agonists at peroxisome proliferator-activated receptor-γ. What is the relationship between peroxisome proliferator-activated receptor-γ and telmisartan?",
+      "data": "Although generally highly specific for angiotensin II type 1 receptors, some ARBs, particularly telmisartan, are partial agonists at peroxisome proliferator-activated receptor-\u03b3. What is the relationship between peroxisome proliferator-activated receptor-\u03b3 and telmisartan?",
       "label": 4,
       "keywords": "agonists",
       "regex": "{{A}}.{0,100}agnoist.{0,100}{{B}}[SEP]{{B}}.{0,100}agonist.{0,100}{{A}}",
-      "explanation": "The message claims that telmisartan is an agonist for peroxisome proliferator-activated receptor-γ."
+      "explanation": "The message claims that telmisartan is an agonist for peroxisome proliferator-activated receptor-\u03b3."
     },
     {
       "idx": 212,
       "data": "To test this, we studied the possible effect of the endothelin receptor antagonist, bosentan (50 and 100 mg kg(-1)) on serum glucose and insulin levels as well as on liver glycogen contents in normoglycemic stressed animals. What is the relationship between endothelin receptor and bosentan?",
       "label": 5,
       "keywords": "antagonist",
-      "regex":"{{A}}.{0,100}antagonist.{0,100}{{B}}[SEP]{{B}}.{0,100}antagonist.{0,100}{{A}}" ,
+      "regex": "{{A}}.{0,100}antagonist.{0,100}{{B}}[SEP]{{B}}.{0,100}antagonist.{0,100}{{A}}",
       "explanation": "The sentence claims that bosentan is an antagonist to the endothelin receoptor."
     },
     {
@@ -477,7 +477,7 @@
       "explanation": "This sentence discusses a game between two university teams, therefore it is related to sports."
     },
     {
-      "idx":96138,
+      "idx": 96138,
       "data": "Nike co-founder Phil Knight has announced that he will step down as chief executive and president of the company. The 66-year-old notified the company #39;s board of directors at ",
       "label": 2,
       "keywords": "co-founder, chief executive, company, board of directors",
@@ -501,7 +501,7 @@
     },
     {
       "idx": 24,
-      "data":"what 's the largest u.s. agricultural crop by weight ?",
+      "data": "what 's the largest u.s. agricultural crop by weight ?",
       "label": 1,
       "keywords": "what 's the",
       "explanation": "This question asks the largest u.s. agricultural crop by weight, the anwser should be a type of crop, thus it is asking for an entity."
@@ -596,14 +596,14 @@
     },
     {
       "idx": 279,
-      "data": "Hunter ( left ) was killed in a tragic  accident  , a spokeswoman for his father Eddie Montgomery ( right ) said  Davara Little , his ex - fiancée and mother of his four - month - old son , posted a touching message on her Facebook page saying :  Hunter gave me the greatest gift a man can give to a woman and no matter what happened to Hunter and I and where our relationship was going , I will forever be grateful for the sweet boy we have together .  Are hunter and Eddie Montgomery spouses?",
+      "data": "Hunter ( left ) was killed in a tragic  accident  , a spokeswoman for his father Eddie Montgomery ( right ) said  Davara Little , his ex - fianc\u00e9e and mother of his four - month - old son , posted a touching message on her Facebook page saying :  Hunter gave me the greatest gift a man can give to a woman and no matter what happened to Hunter and I and where our relationship was going , I will forever be grateful for the sweet boy we have together .  Are hunter and Eddie Montgomery spouses?",
       "label": 0,
       "regex": "{{A}}.{0,50}father.{0,20}{{B}}",
       "explanation": "The sentence says Eddie Montgomery is Hunter's father, therefore they are not spouses."
     },
     {
       "idx": 532,
-      "data": "More executions this week – Two more death row inmates are scheduled to die this week On Wednesday Richard Glossip 52 faces death by lethal injection in Oklahoma for the 1997 murder of a motel owner a crime he denies committing A campaign to save him has drawn the support of a number of celebrities including actress Susan Sarandon and billionaire Richard Branson On Thursday Virginia is scheduled to put to death Alfredo Prieto a Salvadoran immigrant who was convicted of three murders and linked to six others His lawyers say he is mentally handicapped and should be spared the death penalty On Tuesday the Inter - American Human Rights Commission a body of the Organization of American States called for a stay of execution. Are Richard Glossip and Richard Branson spouses?",
+      "data": "More executions this week \u2013 Two more death row inmates are scheduled to die this week On Wednesday Richard Glossip 52 faces death by lethal injection in Oklahoma for the 1997 murder of a motel owner a crime he denies committing A campaign to save him has drawn the support of a number of celebrities including actress Susan Sarandon and billionaire Richard Branson On Thursday Virginia is scheduled to put to death Alfredo Prieto a Salvadoran immigrant who was convicted of three murders and linked to six others His lawyers say he is mentally handicapped and should be spared the death penalty On Tuesday the Inter - American Human Rights Commission a body of the Organization of American States called for a stay of execution. Are Richard Glossip and Richard Branson spouses?",
       "label": 0,
       "regex": "None",
       "explanation": "The sentence does not indicate that Richard Glossip and Richard Branson are spouses."
@@ -646,7 +646,7 @@
   ],
   "semeval": [
     {
-      "idx":2634,
+      "idx": 2634,
       "data": "A girl with a mitochondrial disorder who developed a neurodegenerative disorder with '' features of autism '' after getting a fever from vaccines . What is the relationship between vaccines and fever?",
       "label": 0,
       "regex": "{{B}}.{0,50}from.{0,50}{{A}}",
@@ -711,7 +711,7 @@
   ],
   "arxiv_abstract": [
     {
-      "idx":21377,
+      "idx": 21377,
       "data": "A hybrid classification-regression approach for 3D hand pose estimation using graph convolutional networks\\nhand pose estimation is a crucial part of a wide range of augmented reality\\nand human-computer interaction applications. predicting the 3d hand pose from a\\nsingle rgb image is challenging due to occlusion and depth ambiguities.\\ngcn-based (graph convolutional networks) methods exploit the structural\\nrelationship similarity between graphs and hand joints to model kinematic\\ndependencies between joints. these techniques use predefined or globally\\nlearned joint relationships, which may fail to capture pose-dependent\\nconstraints. to address this problem, we propose a two-stage gcn-based\\nframework that learns per-pose relationship constraints. specifically, the\\nfirst phase quantizes the 2d/3d space to classify the joints into 2d/3d blocks\\nbased on their locality. this spatial dependency information guides this phase\\nto estimate reliable 2d and 3d poses. the second stage further improves the 3d\\nestimation through a gcn-based module that uses an adaptative nearest neighbor\\nalgorithm to determine joint relationships. extensive experiments show that our\\nmulti-stage gcn approach yields an efficient model that produces accurate 2d/3d\\nhand poses and outperforms the state-of-the-art on two public datasets.",
       "label": 0,
       "keywords": "3D, graph convolutional networks, image",
@@ -779,6 +779,368 @@
       "label": 1,
       "keywords": "multi-agent, reinforcement learning",
       "explanation": "This paper investigates the multi-agent reinforcement learning problem, so it belongs to the machine learning area."
+    }
+  ],
+  "sato": [
+    {
+      "label": 24,
+      "data": "2, Nepshaw Lane South 1, Nepshaw Lane South 4, Nepshaw Lane South Chartered House, 5, Nepshaw Lane South Chartered House, Axis Court Nepshaw Lane South Chartered House, Axis Court Nepshaw Lane South Chartered House, 5, Nepshaw Lane South Chartered House, 5, Nepshaw Lane South Unit 1, Nepshaw Lane South Axis Court, Nepshaw Lane South Gildersome",
+      "keywords": "Unit, 5, Nepshaw",
+      "explanation": "The sequence has some commonly used address keywords so the label should be address"
+    },
+    {
+      "label": 24,
+      "data": "Cricklewood 9, Cricklewood Lane Unit 1-5, Cricklewood Lane 1-5, Cricklewood Lane Flat 2, Queensway Court 7A, Cricklewood Lane Queensway Court, 7A, Cricklewood Lane 1-5, Cricklewood Lane 9, Cricklewood Lane Unit 1-5, Cricklewood Lane 9, Cricklewood Lane",
+      "keywords": "2, Unit, Cricklewood",
+      "explanation": "The sequence has some commonly used address keywords so the label should be address"
+    },
+    {
+      "label": 2,
+      "data": "12M 18M 24M",
+      "keywords": "18M, 24M, 12M",
+      "explanation": "The sequence has some commonly used age keywords so the label should be age"
+    },
+    {
+      "label": 2,
+      "data": "0/3M 3/6M 6/9M",
+      "keywords": "3/6M, 0/3M, 6/9M",
+      "explanation": "The sequence has some commonly used age keywords so the label should be age"
+    },
+    {
+      "label": 16,
+      "data": "100 Greatest Film Themes Film Music Masterworks - John Williams Film Music Masterworks - John Williams Film Music Masterworks - John Williams Film Music Masterworks - Alan Silvestri Film Music Masterworks - Alan Silvestri Film Music Masterworks - Alan Silvestri Film Music Masterworks - Alan Silvestri Film Music Masterworks - Alan Silvestri Film Music Masterworks - Alan Silvestri",
+      "keywords": "Music, 100, Masterworks",
+      "explanation": "The sequence has some commonly used album keywords so the label should be album"
+    },
+    {
+      "label": 16,
+      "data": "At Last! (Extra Tracks) Etta James: Her Best Soul Back to Soul Etta James: Her Best Etta James: Her Best Etta James: My Greatest Songs Etta James: Her Best At Last! (Extra Tracks) All the Way",
+      "keywords": "to, Best, Extra",
+      "explanation": "The sequence has some commonly used album keywords so the label should be album"
+    },
+    {
+      "label": 15,
+      "data": "Garth Brooks Garth Brooks Soundtrack Soundtrack Alan Jackson Alan Jackson Alan Jackson Alan Jackson Alan Jackson Alan Jackson Soundtrack Soundtrack Soundtrack Soundtrack Soundtrack Soundtrack Soundtrack Soundtrack Kenny Chesney Kenny Chesney Kenny Chesney Kenny Chesney Kenny Chesney Kenny Chesney Kenny Chesney Soundtrack Kenny Chesney Kenny Chesney Kenny Chesney Kenny Chesney Darryl Worley Toby Keith Toby Keith Toby Keith Toby Keith Toby Keith Dixie Chicks Dixie Chicks Dixie Chicks Dixie Chicks Elvis Presley Elvis Presley Elvis Presley Faith Hill Faith Hill Rascal Flatts Faith Hill Dixie Chicks Shania Twain Shania Twain Shania Twain Shania Twain",
+      "keywords": "Faith, Jackson, Shania",
+      "explanation": "The sequence has some commonly used artist keywords so the label should be artist"
+    },
+    {
+      "label": 15,
+      "data": "Fats Domino Frankie Laine Frankie Lymon Frankie Laine Patsy Cline Patti Page Jerry Lee Lewis Rickie Nelson Louis Jordan Eileen Barton Tony Bennett Laurie London Johnny Cash Jo Stafford Eddie Fisher The Diamonds Chuck Berry Eddie Fisher",
+      "keywords": "Berry, Jerry, Bennett",
+      "explanation": "The sequence has some commonly used artist keywords so the label should be artist"
+    },
+    {
+      "label": 14,
+      "data": "Pts/Pos 3P% FGA/Pos 3p/40 3p/40 3p/40p 3pa/40 3pa/40 3pa/40p 3PA/FGA",
+      "keywords": "FGA/Pos, 3pa/40, Pts/Pos",
+      "explanation": "The sequence has some commonly used category keywords so the label should be category"
+    },
+    {
+      "label": 14,
+      "data": "MTB Regional A MTB Regional A MTB Regional A Rider's total points",
+      "keywords": "'s, MTB, Regional",
+      "explanation": "The sequence has some commonly used category keywords so the label should be category"
+    },
+    {
+      "label": 3,
+      "data": "Umea Stockholm Kalmar Gothenburg Vaxjo Halmstad Copenhagen Norrkoping Jonkoping Helsingborg Gavle Uppsala Orebro Linkoping Smogen",
+      "keywords": "Vaxjo, Jonkoping, Gavle",
+      "explanation": "The sequence has some commonly used city keywords so the label should be city"
+    },
+    {
+      "label": 3,
+      "data": "Ridgefield Fort Wayne Belton West Friendship Ocala Suffern Crosby Waterloo New Paltz Del Mar Dallas Des Moines Suffern Grove Vero Beach Bloomington New Paltz Fitchburg Midland Greenville Navasota Decatur Madison Belton Fitchburg Albion Show Low Humble Priceville Midland Waterloo Crosby Hampton Puyallup Wichita Falls Wrightstown Humble Wilmington Suffern Bossier City",
+      "keywords": "Bloomington, Suffern, Puyallup",
+      "explanation": "The sequence has some commonly used city keywords so the label should be city"
+    },
+    {
+      "label": 21,
+      "data": "So. So. Sr. Jr. Sr. Sr. So. Fr.",
+      "keywords": "Jr., Fr, Sr.",
+      "explanation": "The sequence has some commonly used class keywords so the label should be class"
+    },
+    {
+      "label": 21,
+      "data": "L L L L L L L L L L L L L L L L R R R R R R R R",
+      "keywords": "R, L",
+      "explanation": "The sequence has some commonly used class keywords so the label should be class"
+    },
+    {
+      "label": 13,
+      "data": "MOST OREG TAM GOLD IRCC PNA SDSM SPM 1776 1776",
+      "keywords": "OREG, IRCC, GOLD",
+      "explanation": "The sequence has some commonly used club keywords so the label should be club"
+    },
+    {
+      "label": 13,
+      "data": "RMM ANCM SCAQ IM HOTS IM SATX UNAT RAY HIMA",
+      "keywords": "ANCM, RAY, UNAT",
+      "explanation": "The sequence has some commonly used club keywords so the label should be club"
+    },
+    {
+      "label": 12,
+      "data": "FPAY AS",
+      "keywords": "FPAY, AS",
+      "explanation": "The sequence has some commonly used code keywords so the label should be code"
+    },
+    {
+      "label": 12,
+      "data": "AS RF RF",
+      "keywords": "AS, RF",
+      "explanation": "The sequence has some commonly used code keywords so the label should be code"
+    },
+    {
+      "label": 19,
+      "data": "Mopals.com Inc Palladon Ventures Ltd Equatorial Palm Oil PLC ETFS Physical Palladium Shares Palo Alto Networks Inc Paladin Energy Ltd Paladin Energy Ltd Palette Multimedia Bhd Palace Capital PLC Palm Hills Developments SAE Palmetto Real Estate Trust Asian Plantations Ltd Paloma Resources Inc Paladin Labs, Inc. Palo Alto Networks Inc Pacific Alliance Corporation Paladin Ltd Paladin Ltd Palfinger AG Palliser Oil And Gas Corp.",
+      "keywords": "Ltd, Resources, Inc",
+      "explanation": "The sequence has some commonly used company keywords so the label should be company"
+    },
+    {
+      "label": 19,
+      "data": "FRAGOR DISTRIBUTION Frakes Eng. Franklin Electric Co. Inc. Freedom Plastics, Inc. Freije Treatment Systems, Inc. Fresh Creek Technologies Inc. FreshAWL, LLC Fritz Industries Frontier Geosciences Inc Frontier Technology, Inc. FRP FSHS, Inc Fuller Supply Company F&D International Falk Corp Fib-R-Dor FIBOX Enclosures Fike Corporation Filtertek Filtration Concepts Inc. FLEXIM AMERICAS Corporation Flowline Fluid Equipment Co., Inc. Fluoramics Inc. Fontaine USA, Inc.",
+      "keywords": "Eng, Technologies, Concepts",
+      "explanation": "The sequence has some commonly used company keywords so the label should be company"
+    },
+    {
+      "label": 20,
+      "data": "US DE RU CA DE US MX CO CA US DE US",
+      "keywords": "DE, RU, CA",
+      "explanation": "The sequence has some commonly used country keywords so the label should be country"
+    },
+    {
+      "label": 20,
+      "data": "AUS CUB FIN RUS GER CHN USA SEY",
+      "keywords": "FIN, USA, CHN",
+      "explanation": "The sequence has some commonly used country keywords so the label should be country"
+    },
+    {
+      "label": 26,
+      "data": "Rutherford Anderson Sevier Obion Lauderdale Henry Henry Williamson Knox Montgomery Knox Houston Decatur Lauderdale Rutherford Hardin Haywood Hardin McMinn Weakley Sullivan Henry Dyer Sullivan Sullivan Henry Henry Grundy Franklin Anderson Hardin Henry Lauderdale Anderson Union Knox Lauderdale Houston Henry Henry Hardin Hamilton Hamilton Rutherford Knox Davidson Rutherford Henry Wilson Lauderdale Unicoi Rutherford Rutherford Rutherford Decatur Weakley Rutherford Hardin Rutherford Williamson Henry Rutherford Henry Jefferson Knox Lauderdale Cocke Montgomery Shelby Hamilton Davidson Lauderdale Shelby Knox Davidson Knox Rutherford Rutherford Shelby Benton Hamilton Obion Knox McMinn Henry Henry Montgomery Davidson Smith Davidson Smith Smith Smith Lincoln",
+      "keywords": "Shelby, Cocke, Montgomery",
+      "explanation": "The sequence has some commonly used county keywords so the label should be county"
+    },
+    {
+      "label": 26,
+      "data": "San Francisco Sonoma Santa Clara Santa Clara Santa Clara Alameda Santa Clara San Mateo Alameda Santa Clara Alameda Contra Costa San Francisco Sonoma Alameda Contra Costa Alameda Sonoma Santa Clara Contra Costa Santa Clara Alameda Santa Clara San Mateo Alameda",
+      "keywords": "Clara, Francisco, San",
+      "explanation": "The sequence has some commonly used county keywords so the label should be county"
+    },
+    {
+      "label": 1,
+      "data": "The CxSAST API allows developers to create client scripts for working with CxSAST projects, code scans, and result reports. CxSAST is an application security service that can be integrated as part of... The W3AF API allows developers to programmatically consume W3AF, an open source web application attack and audit framework. This framework was designed to help secure web applications by finding and... The Envoy REST API allows developers to access and integrate the functionality of Envoy with other applications. Some example API methods include listing employees and retrieving employee details,... Medable is a cloud platform that provides HIPAA-compliant services to mobile and web applications. Using this API, you can build HIPAA compliant full-stack and scalable health applications in a... The Mozilla Data Store API allows to store and share data available on Firefox OS and internal applications. It works as an intermediary regardless of API data structures and formats. Resources...",
+      "keywords": "audit, service, other",
+      "explanation": "The sequence has some commonly used description keywords so the label should be description"
+    },
+    {
+      "label": 1,
+      "data": "Provide the basic methods for connecting to the resource and performing simple actions Provide bulk operations to get all the users from the resource Provides the methods to schedule the adapter. Provides the methods to manage groups and organizations on your resources. Helps define the resource, but is not easily modified by administrators.",
+      "keywords": "on, bulk, performing",
+      "explanation": "The sequence has some commonly used description keywords so the label should be description"
+    },
+    {
+      "label": 29,
+      "data": "7:16 8:19",
+      "keywords": "7:16, 8:19",
+      "explanation": "The sequence has some commonly used duration keywords so the label should be duration"
+    },
+    {
+      "label": 29,
+      "data": "205 178 183 231 144 190 178 182 232 225 326 179 169 183 177 206 226 191 235 276 249",
+      "keywords": "182, 206, 249",
+      "explanation": "The sequence has some commonly used duration keywords so the label should be duration"
+    },
+    {
+      "label": 27,
+      "data": "format Paperback format Paperback format Paperback format Paperback format Paperback format Paperback format Hardcover format Paperback format Paperback format Paperback format Paperback format Paperback format Paperback format Paperback format Paperback format Paperback format format Paperback format Mass Market Paperback format Mass Market Paperback format Mass Market Paperback format Mass Market Paperback format Hardcover format Hardcover format Mass Market Paperback format Paperback format Paperback format Paperback format Hardcover format Hardcover",
+      "keywords": "Paperback, Market, Hardcover",
+      "explanation": "The sequence has some commonly used format keywords so the label should be format"
+    },
+    {
+      "label": 27,
+      "data": "format Paperback format Copertina morbida con sovraccoperta format Paperback format Paperback format Paperback format Paperback format Paperback format Paperback format Paperback format Paperback format Paperback format Paperback format Paperback",
+      "keywords": "Paperback, morbida, Copertina",
+      "explanation": "The sequence has some commonly used format keywords so the label should be format"
+    },
+    {
+      "label": 25,
+      "data": "Co-ed Co-ed",
+      "keywords": "Co-ed",
+      "explanation": "The sequence has some commonly used gender keywords so the label should be gender"
+    },
+    {
+      "label": 25,
+      "data": "Co-ed Co-ed",
+      "keywords": "Co-ed",
+      "explanation": "The sequence has some commonly used gender keywords so the label should be gender"
+    },
+    {
+      "label": 10,
+      "data": "France, Tours Japan, Tokyo Japan, Tokyo Japan, Tokyo Japan, Tokyo France, Lille France, Lille Belgium, Brussels Belgium, Brussels Belgium, Brussels England, Greater London, Clerkenwell Belgium, Gullegem Belgium, Loker England, Greater London, Borough New Jersey, Princeton Belgium, Gent Belgium, Moen Belgium, Oostvleteren France, Lille France, Lille Belgium, Westvleteren France, Lille France, Lille Pennsylvania, Philadelphia",
+      "keywords": "Gullegem, Lille, Princeton",
+      "explanation": "The sequence has some commonly used location keywords so the label should be location"
+    },
+    {
+      "label": 10,
+      "data": "Hickman High School Hickman High School",
+      "keywords": "School, Hickman, High",
+      "explanation": "The sequence has some commonly used location keywords so the label should be location"
+    },
+    {
+      "label": 0,
+      "data": "Actual Winners >>> TSS4LSU",
+      "keywords": "TSS4LSU, Actual, Winners",
+      "explanation": "The sequence has some commonly used name keywords so the label should be name"
+    },
+    {
+      "label": 0,
+      "data": "Eryngium antiatlanticum Jury Eryngium antihystericum Rottb. Eryngium aquifolium Cav. Eryngium aquifolium var. barbarum Jahand. & Maire Eryngium argyreum Maire Eryngium atlanticum Batt. & Pit. Eryngium barrelieri Boiss. Eryngium bourgatii Gouan Eryngium bourgatii var. atlanticum Ball Eryngium bourgatii var. hispanicum Lange Eryngium bovei Boiss. Eryngium caespitiferum Font Quer & Pau Eryngium campestre L. Eryngium campestre var. algeriense Chabert Eryngium campestre var. virens Link Eryngium corniculatum Lam. Eryngium creticum Lam. Eryngium dichotomum Desf. Eryngium dichotomum var. attenuatum Maire Eryngium dichotomum var. ficariaefolium Ball Eryngium dichotomum var. variifolium (Coss.) H. Wolff Eryngium dilatatum Lam. Eryngium foetidum L. Eryngium glaciale Boiss. Eryngium glomeratum Lam. Eryngium ilicifolium Lam. Eryngium L. Eryngium maritimum L. Eryngium maroccanum Pit. Eryngium mauritanicum Pomel Eryngium planum L. Eryngium pusillum L. Eryngium tenue Lam. Eryngium tricuspidatum L. Eryngium tricuspidatum L. subsp. tricuspidatum Eryngium tricuspidatum subsp. bovei (Boiss.) Breton Eryngium tricuspidatum subsp. mauritanicum (Pomel) Batt. Eryngium tricuspidatum subsp. subintegrum (Maire & Weiller) Dobignard Eryngium tricuspidatum var. bovei (Boiss.) Batt. Eryngium tricuspidatum var. montanum Chabert Eryngium tricuspidatum var. subintegrum Maire & Weiller Eryngium triquetrum subsp. xauense (Pau) Jovet & Sauvage Eryngium triquetrum Vahl Eryngium triquetrum Vahl subsp. triquetrum Eryngium triquetrum var. carles-tolra Sennen & Mauricio Eryngium triquetrum var. xauense Pau Eryngium variifolium Coss. Eryngium \u00d7mohamedanii Font Quer & Pau",
+      "keywords": "variifolium, Dobignard, Rottb",
+      "explanation": "The sequence has some commonly used name keywords so the label should be name"
+    },
+    {
+      "label": 23,
+      "data": "Included in the bitbake/bin directory in yocto. see: http://www.crashcourse.ca/wiki/index.php/OE_bitbake-env_utility",
+      "keywords": "the, http, bitbake/bin",
+      "explanation": "The sequence has some commonly used notes keywords so the label should be notes"
+    },
+    {
+      "label": 23,
+      "data": "Short film Short film Hollywood Film Festival for Ensemble of the Year Palm Springs International Film Festival Ensemble Cast Award Phoenix Film Critics Society Award for Best Cast Nominated\u2014Central Ohio Film Critics Association for Best Ensemble Nominated\u2014San Diego Film Critics Society Award for Best Performance by an Ensemble Nominated\u2014Screen Actors Guild Award for Outstanding Performance by a Cast in a Motion Picture Nominated\u2014Washington D.C. Area Film Critics Association Award for Best Ensemble Nominated\u2014Central Ohio Film Critics Association for Best Ensemble 5 episodes In post-production",
+      "keywords": "Best, Festival, Nominated\u2014Washington",
+      "explanation": "The sequence has some commonly used notes keywords so the label should be notes"
+    },
+    {
+      "label": 17,
+      "data": "Midfield Midfield Midfield Midfield Midfield Midfield Defense Midfield Midfield Midfield Attacker Midfield Defense Midfield Defense Attacker Midfield Defense Attacker Attacker Defense Goalie Midfield Goalie Midfield Midfield Goalie Defense Forward Defense Midfield Midfield Midfield Attacker Goalie Defense Midfield Defense Midfield Midfield Midfield Midfield Midfield",
+      "keywords": "Defense, Forward, Midfield",
+      "explanation": "The sequence has some commonly used position keywords so the label should be position"
+    },
+    {
+      "label": 17,
+      "data": "Infield Outfield Infield Outfield",
+      "keywords": "Outfield, Infield",
+      "explanation": "The sequence has some commonly used position keywords so the label should be position"
+    },
+    {
+      "label": 6,
+      "data": "AC AC AC AC AC 12 14T AC AC AC 9T AC AC AC",
+      "keywords": "9T, 14T, AC",
+      "explanation": "The sequence has some commonly used rank keywords so the label should be rank"
+    },
+    {
+      "label": 6,
+      "data": "#1 #2 #3 #4 #5 #6 #7 #8 #9 #10",
+      "keywords": "6, 2, 9",
+      "explanation": "The sequence has some commonly used rank keywords so the label should be rank"
+    },
+    {
+      "label": 18,
+      "data": "Punt Field Goal Touchdown Touchdown End of Half Touchdown Field Goal Punt Punt End of Game",
+      "keywords": "Field, End, Touchdown",
+      "explanation": "The sequence has some commonly used result keywords so the label should be result"
+    },
+    {
+      "label": 18,
+      "data": "Loss Loss Win Loss Loss",
+      "keywords": "Win, Loss",
+      "explanation": "The sequence has some commonly used result keywords so the label should be result"
+    },
+    {
+      "label": 28,
+      "data": "M M M M M M M",
+      "keywords": "M",
+      "explanation": "The sequence has some commonly used sex keywords so the label should be sex"
+    },
+    {
+      "label": 28,
+      "data": "M M M M M M M",
+      "keywords": "M",
+      "explanation": "The sequence has some commonly used sex keywords so the label should be sex"
+    },
+    {
+      "label": 4,
+      "data": "CA CA CA CA CA CA",
+      "keywords": "CA",
+      "explanation": "The sequence has some commonly used state keywords so the label should be state"
+    },
+    {
+      "label": 4,
+      "data": "MN MN KS KS KS FL WA CT MD NJ",
+      "keywords": "WA, KS, CT",
+      "explanation": "The sequence has some commonly used state keywords so the label should be state"
+    },
+    {
+      "label": 5,
+      "data": "Not For Sale Not For Sale Not For Sale Not For Sale Not For Sale Not For Sale Not For Sale Not For Sale Not For Sale Not For Sale Not For Sale Not For Sale",
+      "keywords": "Sale, For, Not",
+      "explanation": "The sequence has some commonly used status keywords so the label should be status"
+    },
+    {
+      "label": 5,
+      "data": "Locality Locality Locality Locality Locality Locality Locality Locality Locality Locality Locality Locality Locality Locality Locality Locality Locality Locality Locality Locality Locality Locality Locality Locality Locality Locality Locality Locality Locality Locality Locality Locality Locality Locality Locality Locality Main Locality Locality",
+      "keywords": "Main, Locality",
+      "explanation": "The sequence has some commonly used status keywords so the label should be status"
+    },
+    {
+      "label": 22,
+      "data": "DCM VNR TEP NSANY TK",
+      "keywords": "NSANY, DCM, TEP",
+      "explanation": "The sequence has some commonly used symbol keywords so the label should be symbol"
+    },
+    {
+      "label": 22,
+      "data": "DCM VNR TEP NSANY TK",
+      "keywords": "VNR, TEP, NSANY",
+      "explanation": "The sequence has some commonly used symbol keywords so the label should be symbol"
+    },
+    {
+      "label": 8,
+      "data": "Hong Kong Development XI Netherlands Australia Hong Kong Development XI China Sri Lanka Netherlands China England India",
+      "keywords": "India, Development, XI",
+      "explanation": "The sequence has some commonly used team keywords so the label should be team"
+    },
+    {
+      "label": 8,
+      "data": "WAS WAS WAS WAS WAS WAS WAS WAS MIN MIN",
+      "keywords": "WAS, MIN",
+      "explanation": "The sequence has some commonly used team keywords so the label should be team"
+    },
+    {
+      "label": 11,
+      "data": "LIR+IPv6 LIR+IPv6 LIR+IPv6 LIR + IPv6 LIR+IPv6 LIR+IPv6 LIR+IPv6 LIR+IPv6 LIR+IPv6 LIR+IPv6 LIR+IPv6",
+      "keywords": "IPv6, LIR+IPv6, LIR",
+      "explanation": "The sequence has some commonly used type keywords so the label should be type"
+    },
+    {
+      "label": 11,
+      "data": "BANT",
+      "keywords": "BANT",
+      "explanation": "The sequence has some commonly used type keywords so the label should be type"
+    },
+    {
+      "label": 9,
+      "data": "25.6 33.2 30.6 30.3 33.0 29.7",
+      "keywords": "30.6, 33.0, 25.6",
+      "explanation": "The sequence has some commonly used weight keywords so the label should be weight"
+    },
+    {
+      "label": 9,
+      "data": "28.6 33.5",
+      "keywords": "28.6, 33.5",
+      "explanation": "The sequence has some commonly used weight keywords so the label should be weight"
+    },
+    {
+      "label": 7,
+      "data": "1999 2006 2004 2005 2003",
+      "keywords": "2003, 2004, 2006",
+      "explanation": "The sequence has some commonly used year keywords so the label should be year"
+    },
+    {
+      "label": 7,
+      "data": "Multiple Multiple Multiple Multiple Multiple Multiple Multiple Multiple Multiple Multiple Multiple Multiple Multiple Multiple Multiple Multiple",
+      "keywords": "Multiple",
+      "explanation": "The sequence has some commonly used year keywords so the label should be year"
     }
   ]
 }

@@ -4,7 +4,7 @@ import random
 from alipy import ToolBox
 from sentence_transformers import SentenceTransformer, util
 from scipy.stats import entropy
-from data_utils import build_revert_index
+from LLMDP_chenjie.data_utils import build_revert_index
 from pathlib import Path
 
 

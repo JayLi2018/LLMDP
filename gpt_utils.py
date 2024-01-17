@@ -1,7 +1,11 @@
 import numpy as np
 import json
 import re
+import logging
+import LLMDP_chenjie.logconfig
+import logging
 
+logger = logging.getLogger(__name__)
 
 def extract_response(content):
     """
@@ -123,7 +127,7 @@ def build_example(dataset_name, dataset, query_idx, response_dict):
     if response_dict["keyword_list"] is not None:
         response += "KEYWORDS:{}\n".format(",".join(response_dict["keyword_list"]))
 
-    response += "LABEL:{}\n".format(label)
+    response += "LABEL:{}\n".format(    )
     return user_prompt+response
 
 
@@ -131,6 +135,7 @@ def create_cot_prompt(dataset_name, dataset, example_per_class=1, **kwargs):
     """
     Create prompt that ask LLM to generate chain-of-thought and/or keywords automatically given instance and label
     """
+    logger.warning("creating few shot example")
     if dataset_name == "youtube":
         task = "spam classification"
         task_info = "In each iteration, the user will provide a comment for a video and a label indicating whether the comment is a spam. "
@@ -199,7 +204,39 @@ def create_cot_prompt(dataset_name, dataset, example_per_class=1, **kwargs):
         class_info = "0 for Computer Vision and Pattern Recognition, covering image processing, computer vision, pattern recognition, and scene understanding." \
                      "1 for Machine Learning, covering Papers on all aspects of machine learning research (supervised, unsupervised, reinforcement learning, bandit problems," \
                      "and so on) including also robustness, explanation, fairness, and methodology. Also for machine learning paper with a statistical or theoretical grounding."
-
+    elif dataset_name == 'sato':
+        task='LF creation for Sato dataset'
+        task_info='In each iteration, the user will provide a sequence and a label indicating which class the sequence belongs to'
+        class_info="0 for name." \
+        "1 for description." \
+        "2 for age." \
+        "3 for city." \
+        "4 for state." \
+        "5 for status." \
+        "6 for rank." \
+        "7 for year." \
+        "8 for team." \
+        "9 for weight." \
+        "10 for location." \
+        "11 for type." \
+        "12 for code." \
+        "13 for club." \
+        "14 for category." \
+        "15 for artist." \
+        "16 for album." \
+        "17 for position." \
+        "18 for result." \
+        "19 for company." \
+        "20 for country." \
+        "21 for class." \
+        "22 for symbol." \
+        "23 for notes." \
+        "24 for address." \
+        "25 for gender." \
+        "26 for county." \
+        "27 for format." \
+        "28 for sex." \
+        "29 for duration."
 
     if "lf_type" in kwargs:
         lf_type = kwargs["lf_type"]
@@ -273,7 +310,7 @@ def create_cot_prompt(dataset_name, dataset, example_per_class=1, **kwargs):
     example_string = ""
     if example_per_class > 0:
         # use fixed examples
-        with open("examples.json") as json_file:
+        with open("/Users/chenjieli/Desktop/LLMDP_chenjie/examples.json") as json_file:
             example_dict = json.load(json_file)
 
         examples = example_dict[dataset_name]
@@ -315,6 +352,12 @@ def create_cot_prompt(dataset_name, dataset, example_per_class=1, **kwargs):
     TASK DESCRIPTION: 
     You are a helpful assistant who helps users in a {} task. {} ({})
     INTERACTION FORMAT: {}""".format(task, task_info, class_info, interaction_format)
+
+    logger.warning("task_prompt:")
+    logger.warning(task_prompt)
+    logger.warning('example_string:')
+    logger.warning(example_string)
+
     return task_prompt, example_string
 
 
@@ -322,6 +365,8 @@ def create_prompt(dataset_name, dataset, example_per_class=1, example_selection=
     """
     Create prompt for label function generation
     """
+
+    logger.warning("creating prompt")
     if dataset_name == "youtube":
         task = "spam classification"
         task_info = "In each iteration, the user will provide a comment for a video. Please decide whether the comment is a spam."
@@ -393,6 +438,39 @@ def create_prompt(dataset_name, dataset, example_per_class=1, example_selection=
         class_info = "0 for Computer Vision and Pattern Recognition, covering image processing, computer vision, pattern recognition, and scene understanding." \
                      "1 for Machine Learning, covering Papers on all aspects of machine learning research (supervised, unsupervised, reinforcement learning, bandit problems," \
                      "and so on) including also robustness, explanation, fairness, and methodology. Also for machine learning paper with a statistical or theoretical grounding."
+    elif dataset_name == 'sato':
+        task='LF creation for Sato dataset'
+        task_info='In each iteration, the user will provide a sequence and a label indicating which class the sequence belongs to'
+        class_info="0 for name." \
+            "1 for description." \
+            "2 for age." \
+            "3 for city." \
+            "4 for state." \
+            "5 for status." \
+            "6 for rank." \
+            "7 for year." \
+            "8 for team." \
+            "9 for weight." \
+            "10 for location." \
+            "11 for type." \
+            "12 for code." \
+            "13 for club." \
+            "14 for category." \
+            "15 for artist." \
+            "16 for album." \
+            "17 for position." \
+            "18 for result." \
+            "19 for company." \
+            "20 for country." \
+            "21 for class." \
+            "22 for symbol." \
+            "23 for notes." \
+            "24 for address." \
+            "25 for gender." \
+            "26 for county." \
+            "27 for format." \
+            "28 for sex." \
+            "29 for duration."
 
     if "lf_type" in kwargs:
         lf_type = kwargs["lf_type"]
@@ -465,7 +543,7 @@ def create_prompt(dataset_name, dataset, example_per_class=1, example_selection=
     example_string = ""
     if example_per_class > 0:
         # use fixed examples
-        with open("examples.json") as json_file:
+        with open("/Users/chenjieli/Desktop/LLMDP_chenjie/examples.json") as json_file:
             example_dict = json.load(json_file)
 
         examples = example_dict[dataset_name]
@@ -474,8 +552,12 @@ def create_prompt(dataset_name, dataset, example_per_class=1, example_selection=
         for e in examples:
             example_labels.append(e["label"])
 
+        # print(f"dataset.n_class: {dataset.n_class}")
+        # print(f"example labels : {example_labels}")
+
         for c in range(dataset.n_class):
             active_indices = np.nonzero(np.array(example_labels) == c)[0]
+            # print(f"c:{c}, len(active_indices): {len(active_indices)}")
             assert len(active_indices) >= example_per_class
             selected_indices = np.random.choice(active_indices, example_per_class)
             example_indices += selected_indices.tolist()
@@ -507,6 +589,11 @@ def create_prompt(dataset_name, dataset, example_per_class=1, example_selection=
 TASK DESCRIPTION: 
 You are a helpful assistant who helps users in a {} task. {} ({})
 INTERACTION FORMAT: {}""".format(task, task_info, class_info, interaction_format)
+    logger.warning("system prompt")
+    logger.warning(task_prompt)
+    logger.warning("example_string")
+    logger.warning(example_string)
+    # exit()
 
     return task_prompt, example_string
 

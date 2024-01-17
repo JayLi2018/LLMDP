@@ -1,7 +1,10 @@
 import numpy as np
 from sklearn.metrics import accuracy_score, recall_score, precision_score, f1_score, confusion_matrix, roc_auc_score
 from snorkel.labeling.analysis import LFAnalysis
+import LLMDP_chenjie.logconfig
+import logging 
 
+logger = logging.getLogger(__name__)
 
 def print_dataset_stats(dataset, split="train"):
     print("{} size: {}".format(split, len(dataset)))
@@ -41,9 +44,12 @@ def evaluate_lfs(labels, L_train, lf_classes=None, n_class=2):
         lf_cov_total_pc = []
         for c in range(n_class):
             active_lfs = lf_classes == c
+            logger.warning(f"number of active_lfs for class {c}: {active_lfs}")
             lf_num_pc.append(np.sum(active_lfs))
             if np.sum(active_lfs) != 0:
+                logger.warning(f"active_lfs lf_accs: {lf_accs[active_lfs]}")
                 lf_acc_avg_pc.append(np.nanmean(lf_accs[active_lfs]))
+                logger.warning(f"active_lfs lf_covs: {lf_accs[active_lfs]}")
                 lf_cov_avg_pc.append(np.mean(lf_covs[active_lfs]))
                 L_train_pc = L_train[:, active_lfs]
                 cov_pc = np.mean(np.max(L_train_pc, axis=1) == c)
@@ -117,6 +123,8 @@ def evaluate_disc_model(disc_model, test_dataset):
     y_pred = disc_model.predict(test_dataset.features)
     y_probs = disc_model.predict_proba(test_dataset.features)
     test_acc = accuracy_score(test_dataset.labels, y_pred)
+    logger.warning("accuracy per class using downstream model : raw data")
+
     if test_dataset.n_class == 2:
         test_auc = roc_auc_score(test_dataset.labels, y_probs[:, 1])
         test_f1 = f1_score(test_dataset.labels, y_pred)

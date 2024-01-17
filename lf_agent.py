@@ -3,9 +3,9 @@ from sklearn.metrics.pairwise import cosine_similarity
 import numpy as np
 import os
 from numpy.random import default_rng
-from lf_family import KeywordLF, RegexLF, create_label_matrix
+from LLMDP_chenjie.lf_family import KeywordLF, RegexLF, create_label_matrix
 import openai
-from gpt_utils import create_prompt, create_cot_prompt, create_cot_user_prompt, create_user_prompt, extract_response, build_example
+from LLMDP_chenjie.gpt_utils import create_prompt, create_cot_prompt, create_cot_user_prompt, create_user_prompt, extract_response, build_example
 from sentence_transformers import SentenceTransformer
 from tenacity import (
     retry,
@@ -13,11 +13,15 @@ from tenacity import (
     wait_random_exponential,
 )  # for exponential backoff
 
-from data_utils import preprocess_text
+from LLMDP_chenjie.data_utils import preprocess_text
 import nltk
 import re
 import time
+import LLMDP_chenjie.logconfig
+import logging 
+from collections import defaultdict
 
+logger = logging.getLogger(__name__)
 
 def get_lf_agent(train_dataset, valid_dataset, agent_type, **kwargs):
     if agent_type == "simulated":
@@ -358,7 +362,7 @@ class ChatGPTLFAgent:
         self.kwargs = kwargs
         # API related arguments
         self.model = kwargs.get("model", "gpt-3.5-turbo")
-        openai.api_key_path = kwargs.get("api_key_path", "openai-api.key")
+        openai.api_key_path = kwargs.get("api_key_path", "/Users/chenjieli/Desktop/LLMDP_chenjie/openai-api.key")
         self.example_per_class = kwargs.get("example_per_class", 1)
         self.example_selection = kwargs.get("example_selection", "random")
         if self.example_selection == "neighbor":
@@ -397,16 +401,21 @@ class ChatGPTLFAgent:
                                                                 example_selection=self.example_selection,
                                                                 explanation=self.return_explanation,
                                                                 lf_type=self.lf_type)
+        # print("system_prompt")
+        # print(self.system_prompt)
+        # print("example_prompt")
+        # print(self.example_prompt)
         self.cot_system_prompt, self.cot_example_prompt = create_cot_prompt(self.kwargs["dataset_name"], self.valid_dataset,
                                                                             example_per_class=self.example_per_class,
                                                                             example_selection=self.example_selection,
                                                                             explanation=self.return_explanation,
                                                                             lf_type=self.lf_type)
-        if self.display:
-            print("Init: ChatGPT system prompt:")
-            print(self.system_prompt)
-            print("Init: Example prompt:")
-            print(self.example_prompt)
+        self.label_stats = defaultdict(int)
+        # if self.display:
+        #     print("Init: ChatGPT system prompt:")
+        #     print(self.system_prompt)
+        #     print("Init: Example prompt:")
+        #     print(self.example_prompt)
 
 
 
@@ -425,6 +434,8 @@ class ChatGPTLFAgent:
                     {"role": "system", "content": self.cot_system_prompt},
                     {"role": "user", "content": cot_user_prompt}
                 ]
+                # logger.warning("example messages")
+                # logger.warning("example")
 
                 response = completion_with_backoff(
                     sleep_time=self.sleep_time,
@@ -436,8 +447,12 @@ class ChatGPTLFAgent:
                 )
 
                 response_content = response['choices'][0]["message"]["content"]
+                # logger.warning("response raw content")
+                # logger.warning(response_content)
 
                 response_dict = extract_response(response_content)
+                # logger.warning("extracted content")
+                # logger.warning(response_dict)
                 if self.lf_type == "keyword" and response_dict["keyword_list"] is not None and len(response_dict["keyword_list"]) > 0:
                     cur_examples += 1
                     example_string += build_example(self.kwargs["dataset_name"], self.valid_dataset, valid_idx, response_dict)
@@ -453,14 +468,16 @@ class ChatGPTLFAgent:
             example_string = self.example_prompt
 
         user_prompt = create_user_prompt(example_string, self.kwargs["dataset_name"], self.train_dataset, query_idx)
-        print("Create_LF: user prompt")
-        print(user_prompt)
+        logger.warning("Create_LF: user prompt")
+        logger.warning(user_prompt)
         candidate_lfs = []
         if self.lf_type == "keyword":
             messages = [
                 {"role": "system", "content": self.system_prompt},
                 {"role": "user", "content": user_prompt}
             ]
+            logger.warning("user input messages")
+            logger.warning(messages)
             label, keyword_list = None, []
 
             response = completion_with_backoff(
@@ -471,6 +488,8 @@ class ChatGPTLFAgent:
                 temperature=self.temperature,
                 n=self.n_completion
             )
+            logger.warning("raw response")
+            logger.warning(response)
 
             output_labels = []
             for j in range(self.n_completion):
@@ -479,19 +498,30 @@ class ChatGPTLFAgent:
                     print("Create_LF: Response {}: {}\n".format(j, response_content))
 
                 response_dict = extract_response(response_content)
+                print(f"response_dict: {response_dict}")
                 label = response_dict["label"]
                 keywords = response_dict["keyword_list"]
 
+                logger.warning(f"the label is {label}, and the train_dataset.n_class is {self.train_dataset.n_class}")
+
                 if label in range(self.train_dataset.n_class):
                     output_labels.append(label)
+                    self.label_stats['correct']+=1
+                else:
+                    self.label_stats['wrong']+=1
+
                 if isinstance(keywords, list):
                     keyword_list += keywords
 
             if len(output_labels) > 0:
+                logger.warning(f"output_labels: {output_labels}")
                 label = np.bincount(output_labels).argmax()
 
             keyword_list = np.unique(keyword_list)
-            if label is not None:
+            logger.warning("unique keywords after processing response: ")
+            logger.warning(keyword_list)
+            if output_labels:
+                logger.warning(f"output_labels : {output_labels}")
                 for keyword in keyword_list:
                     processed_keyword = preprocess_text(keyword, self.stop_words, self.stemming)
                     n_gram = len(processed_keyword.split(" "))
@@ -567,7 +597,7 @@ class ChatGPTLFAgent:
             for lf in filtered_lfs:
                 self.lfs.append(lf)
 
-        return filtered_lfs
+        return candidate_lfs, filtered_lfs
 
 
 class SimLFAgent:

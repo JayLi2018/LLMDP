@@ -1,0 +1,13 @@
+pytokenizations
+transformers[sentencepiece]
+datasets
+torch
+torchvision
+torchaudio
+snorkel
+optuna
+wandb
+alipy
+sentence-transformers
+openai
+ws-benchmark==1.1.2rc0

@@ -784,362 +784,938 @@
   "sato": [
     {
       "label": 24,
-      "data": "2, Nepshaw Lane South 1, Nepshaw Lane South 4, Nepshaw Lane South Chartered House, 5, Nepshaw Lane South Chartered House, Axis Court Nepshaw Lane South Chartered House, Axis Court Nepshaw Lane South Chartered House, 5, Nepshaw Lane South Chartered House, 5, Nepshaw Lane South Unit 1, Nepshaw Lane South Axis Court, Nepshaw Lane South Gildersome",
-      "keywords": "Unit, 5, Nepshaw",
+      "data": "129, Beaumont Road 129, Beaumont Road 131, Beaumont Road 133, Beaumont Road 133, Beaumont Road 133, Beaumont Road 139, Beaumont Road 139, Beaumont Road 137, Beaumont Road 40, Beaumont Road",
+      "keywords": "129, 133, Beaumont",
       "explanation": "The sequence has some commonly used address keywords so the label should be address"
     },
     {
       "label": 24,
-      "data": "Cricklewood 9, Cricklewood Lane Unit 1-5, Cricklewood Lane 1-5, Cricklewood Lane Flat 2, Queensway Court 7A, Cricklewood Lane Queensway Court, 7A, Cricklewood Lane 1-5, Cricklewood Lane 9, Cricklewood Lane Unit 1-5, Cricklewood Lane 9, Cricklewood Lane",
-      "keywords": "2, Unit, Cricklewood",
+      "data": "305 S STATE 1400 15TH AVE NW",
+      "keywords": "15TH, 305, 1400",
       "explanation": "The sequence has some commonly used address keywords so the label should be address"
     },
     {
-      "label": 2,
-      "data": "12M 18M 24M",
-      "keywords": "18M, 24M, 12M",
+      "label": 75,
+      "data": "Plumbers/Pipefitters Union National Rifle Assn",
+      "keywords": "Rifle, Assn, National",
+      "explanation": "The sequence has some commonly used affiliate keywords so the label should be affiliate"
+    },
+    {
+      "label": 75,
+      "data": "Neetirajsinh Chhasatia http://neetirajsinh.co.in/ Yashar http://snowafter.com/ Sedna http://www.sednawireless.com/best-bluetooth-headset/ Affiliate http://www.theplasmacutter.com/best-plasma-cutter-reviews/ ANKIT JAIN http://www.auhits.com/",
+      "keywords": "ANKIT, Neetirajsinh, Sedna",
+      "explanation": "The sequence has some commonly used affiliate keywords so the label should be affiliate"
+    },
+    {
+      "label": 47,
+      "data": "National Democratic Institute for International Affairs International Republican Institute OPORA",
+      "keywords": "National, Republican, Affairs",
+      "explanation": "The sequence has some commonly used affiliation keywords so the label should be affiliation"
+    },
+    {
+      "label": 47,
+      "data": "Commission on Security and Cooperation in Europe Commission on Security and Cooperation in Europe Commission on Security and Cooperation in Europe International Republican Institute National Democratic Institute (NDI) International Foundation for Electoral Systems (IFES) Freedom House",
+      "keywords": "Commission, Security, Systems",
+      "explanation": "The sequence has some commonly used affiliation keywords so the label should be affiliation"
+    },
+    {
+      "label": 3,
+      "data": "0 - 3M 0 - 6M 3 - 6M 6 - 12M 1 - 2 years",
+      "keywords": "6, years, 1",
       "explanation": "The sequence has some commonly used age keywords so the label should be age"
     },
     {
-      "label": 2,
-      "data": "0/3M 3/6M 6/9M",
-      "keywords": "3/6M, 0/3M, 6/9M",
+      "label": 3,
+      "data": "0/6M 6/12M 12/24M",
+      "keywords": "0/6M, 12/24M, 6/12M",
       "explanation": "The sequence has some commonly used age keywords so the label should be age"
     },
     {
-      "label": 16,
-      "data": "100 Greatest Film Themes Film Music Masterworks - John Williams Film Music Masterworks - John Williams Film Music Masterworks - John Williams Film Music Masterworks - Alan Silvestri Film Music Masterworks - Alan Silvestri Film Music Masterworks - Alan Silvestri Film Music Masterworks - Alan Silvestri Film Music Masterworks - Alan Silvestri Film Music Masterworks - Alan Silvestri",
-      "keywords": "Music, 100, Masterworks",
+      "label": 19,
+      "data": "Goodbye, Babylon Superstitions Si, Para Usted: The Funky Beats of Revolutionary Cuba Antibalas Jiaolong Limerence Cosmic Sound II Sunrise Blend 2 The Flower Lane The Sun EP s/t Tender New Signs Pipe Dreams A Catholic Education Four yamane Sakura River Burning Farm Nigeria Special Volume 2: Modern Highlife, Afro-Sounds and Nigerian Blues Shadow To Shine Stranger Wasp EP Cobra Juicy Mirror Gazer Bad Penny",
+      "keywords": "River, Babylon, Cobra",
       "explanation": "The sequence has some commonly used album keywords so the label should be album"
     },
     {
-      "label": 16,
-      "data": "At Last! (Extra Tracks) Etta James: Her Best Soul Back to Soul Etta James: Her Best Etta James: Her Best Etta James: My Greatest Songs Etta James: Her Best At Last! (Extra Tracks) All the Way",
-      "keywords": "to, Best, Extra",
+      "label": 19,
+      "data": "Es k\u00f6nnte gar nicht sch\u00f6ner sein - Single Es k\u00f6nnte gar nicht sch\u00f6ner sein - Single Schlager Pooower!!! - Fussballhits Schlager Limonade Mallorca's Partygold Vol. 1 Mallorca's fetzige Ludermixe Vol. 2 Mallorca's Partygold Vol. 2 Illegal Schlager Vol. 3 Gleis 3 Party Express (Vol.1) Hands Up - Partykracher Vol.2",
+      "keywords": "Limonade, k\u00f6nnte, Hands",
       "explanation": "The sequence has some commonly used album keywords so the label should be album"
+    },
+    {
+      "label": 36,
+      "data": "Fuego Ironworks Route 218 Route 221 Route 222 Route 224 Sea Route 230",
+      "keywords": "222, Route, 218",
+      "explanation": "The sequence has some commonly used area keywords so the label should be area"
+    },
+    {
+      "label": 36,
+      "data": "Iron Island (B1f Left) Iron Island (B1f Right) Iron Island (B2f Right) Iron Island (B2f Left) Iron Island (B3f)",
+      "keywords": "B3f, B2f, Island",
+      "explanation": "The sequence has some commonly used area keywords so the label should be area"
     },
     {
       "label": 15,
-      "data": "Garth Brooks Garth Brooks Soundtrack Soundtrack Alan Jackson Alan Jackson Alan Jackson Alan Jackson Alan Jackson Alan Jackson Soundtrack Soundtrack Soundtrack Soundtrack Soundtrack Soundtrack Soundtrack Soundtrack Kenny Chesney Kenny Chesney Kenny Chesney Kenny Chesney Kenny Chesney Kenny Chesney Kenny Chesney Soundtrack Kenny Chesney Kenny Chesney Kenny Chesney Kenny Chesney Darryl Worley Toby Keith Toby Keith Toby Keith Toby Keith Toby Keith Dixie Chicks Dixie Chicks Dixie Chicks Dixie Chicks Elvis Presley Elvis Presley Elvis Presley Faith Hill Faith Hill Rascal Flatts Faith Hill Dixie Chicks Shania Twain Shania Twain Shania Twain Shania Twain",
-      "keywords": "Faith, Jackson, Shania",
+      "data": "Led Zeppelin Led Zeppelin Led Zeppelin Led Zeppelin Led Zeppelin Led Zeppelin Led Zeppelin Led Zeppelin Led Zeppelin",
+      "keywords": "Zeppelin, Led",
       "explanation": "The sequence has some commonly used artist keywords so the label should be artist"
     },
     {
       "label": 15,
-      "data": "Fats Domino Frankie Laine Frankie Lymon Frankie Laine Patsy Cline Patti Page Jerry Lee Lewis Rickie Nelson Louis Jordan Eileen Barton Tony Bennett Laurie London Johnny Cash Jo Stafford Eddie Fisher The Diamonds Chuck Berry Eddie Fisher",
-      "keywords": "Berry, Jerry, Bennett",
+      "data": "Chuck Prophet Chuck Prophet",
+      "keywords": "Prophet, Chuck",
       "explanation": "The sequence has some commonly used artist keywords so the label should be artist"
     },
     {
-      "label": 14,
-      "data": "Pts/Pos 3P% FGA/Pos 3p/40 3p/40 3p/40p 3pa/40 3pa/40 3pa/40p 3PA/FGA",
-      "keywords": "FGA/Pos, 3pa/40, Pts/Pos",
-      "explanation": "The sequence has some commonly used category keywords so the label should be category"
+      "label": 63,
+      "data": "December 11, 1972 November 25, 1971 September 24, 1978 January 9, 1976 August 24, 1968 March 18, 1977 October 30, 1977 September 3, 1979 June 5, 1980 April 19, 1981 February 24, 1974 November 8, 1975 January 12, 1979 February 2, 1969 January 7, 1975 March 22, 1977 January 22, 1981 July 7, 1974 July 17, 1977 September 21, 1969 April 13, 1972 February 28, 1969 July 15, 1974 June 18, 1979 August 24, 1969 March 9, 1978 December 11, 1975 August 27, 1979 June 12, 1977 March 16, 1975 February 8, 1975 September 2, 1974 April 18, 1979 May 21, 1975 February 13, 1972",
+      "keywords": "27, July, August",
+      "explanation": "The sequence has some commonly used birthDate keywords so the label should be birthDate"
     },
     {
-      "label": 14,
-      "data": "MTB Regional A MTB Regional A MTB Regional A Rider's total points",
-      "keywords": "'s, MTB, Regional",
-      "explanation": "The sequence has some commonly used category keywords so the label should be category"
+      "label": 63,
+      "data": "Day, Month, 1922 Day, Month, 1922 Day, Month, 1911 1901 Date, 1870 1910 Date, 1891 Day, Month, 1872 1906 1866 1886 Day, Month, 1894 Day, Month, 1930 1798 1798 1798 1790 1790 1790 Day, Month, 1840 Day, Month, 1840",
+      "keywords": "1922, 1891, 1910",
+      "explanation": "The sequence has some commonly used birthDate keywords so the label should be birthDate"
     },
     {
-      "label": 3,
-      "data": "Umea Stockholm Kalmar Gothenburg Vaxjo Halmstad Copenhagen Norrkoping Jonkoping Helsingborg Gavle Uppsala Orebro Linkoping Smogen",
-      "keywords": "Vaxjo, Jonkoping, Gavle",
-      "explanation": "The sequence has some commonly used city keywords so the label should be city"
+      "label": 66,
+      "data": "Place Place Place Place Place Place, USA Place, USA Place, Italy Place, Italy Place, Italy Place, Italy Place Place Place Place, Italy Italy Italy Place, USA Place, USA Place, USA Place, USA Italy Place",
+      "keywords": "Place, USA, Italy",
+      "explanation": "The sequence has some commonly used birthPlace keywords so the label should be birthPlace"
     },
     {
-      "label": 3,
-      "data": "Ridgefield Fort Wayne Belton West Friendship Ocala Suffern Crosby Waterloo New Paltz Del Mar Dallas Des Moines Suffern Grove Vero Beach Bloomington New Paltz Fitchburg Midland Greenville Navasota Decatur Madison Belton Fitchburg Albion Show Low Humble Priceville Midland Waterloo Crosby Hampton Puyallup Wichita Falls Wrightstown Humble Wilmington Suffern Bossier City",
-      "keywords": "Bloomington, Suffern, Puyallup",
-      "explanation": "The sequence has some commonly used city keywords so the label should be city"
+      "label": 66,
+      "data": "Place, PA Place, PA Place, Canada USA Place Place, Canada Place Place, England Place, England Lithuania Place, Ukraine Place, Ukraine Place Place Place Place Place Place Place Place Place",
+      "keywords": "Canada, PA, Ukraine",
+      "explanation": "The sequence has some commonly used birthPlace keywords so the label should be birthPlace"
     },
     {
-      "label": 21,
-      "data": "So. So. Sr. Jr. Sr. Sr. So. Fr.",
-      "keywords": "Jr., Fr, Sr.",
-      "explanation": "The sequence has some commonly used class keywords so the label should be class"
+      "label": 52,
+      "data": "Model: MPN:",
+      "keywords": "Model, MPN",
+      "explanation": "The sequence has some commonly used brand keywords so the label should be brand"
     },
     {
-      "label": 21,
-      "data": "L L L L L L L L L L L L L L L L R R R R R R R R",
-      "keywords": "R, L",
-      "explanation": "The sequence has some commonly used class keywords so the label should be class"
+      "label": 52,
+      "data": "? ? ?",
+      "keywords": "",
+      "explanation": "The sequence has some commonly used brand keywords so the label should be brand"
     },
     {
-      "label": 13,
-      "data": "MOST OREG TAM GOLD IRCC PNA SDSM SPM 1776 1776",
-      "keywords": "OREG, IRCC, GOLD",
-      "explanation": "The sequence has some commonly used club keywords so the label should be club"
+      "label": 65,
+      "data": "30 30 6 70",
+      "keywords": "30, 6, 70",
+      "explanation": "The sequence has some commonly used capacity keywords so the label should be capacity"
     },
     {
-      "label": 13,
-      "data": "RMM ANCM SCAQ IM HOTS IM SATX UNAT RAY HIMA",
-      "keywords": "ANCM, RAY, UNAT",
-      "explanation": "The sequence has some commonly used club keywords so the label should be club"
-    },
-    {
-      "label": 12,
-      "data": "FPAY AS",
-      "keywords": "FPAY, AS",
-      "explanation": "The sequence has some commonly used code keywords so the label should be code"
-    },
-    {
-      "label": 12,
-      "data": "AS RF RF",
-      "keywords": "AS, RF",
-      "explanation": "The sequence has some commonly used code keywords so the label should be code"
-    },
-    {
-      "label": 19,
-      "data": "Mopals.com Inc Palladon Ventures Ltd Equatorial Palm Oil PLC ETFS Physical Palladium Shares Palo Alto Networks Inc Paladin Energy Ltd Paladin Energy Ltd Palette Multimedia Bhd Palace Capital PLC Palm Hills Developments SAE Palmetto Real Estate Trust Asian Plantations Ltd Paloma Resources Inc Paladin Labs, Inc. Palo Alto Networks Inc Pacific Alliance Corporation Paladin Ltd Paladin Ltd Palfinger AG Palliser Oil And Gas Corp.",
-      "keywords": "Ltd, Resources, Inc",
-      "explanation": "The sequence has some commonly used company keywords so the label should be company"
-    },
-    {
-      "label": 19,
-      "data": "FRAGOR DISTRIBUTION Frakes Eng. Franklin Electric Co. Inc. Freedom Plastics, Inc. Freije Treatment Systems, Inc. Fresh Creek Technologies Inc. FreshAWL, LLC Fritz Industries Frontier Geosciences Inc Frontier Technology, Inc. FRP FSHS, Inc Fuller Supply Company F&D International Falk Corp Fib-R-Dor FIBOX Enclosures Fike Corporation Filtertek Filtration Concepts Inc. FLEXIM AMERICAS Corporation Flowline Fluid Equipment Co., Inc. Fluoramics Inc. Fontaine USA, Inc.",
-      "keywords": "Eng, Technologies, Concepts",
-      "explanation": "The sequence has some commonly used company keywords so the label should be company"
-    },
-    {
-      "label": 20,
-      "data": "US DE RU CA DE US MX CO CA US DE US",
-      "keywords": "DE, RU, CA",
-      "explanation": "The sequence has some commonly used country keywords so the label should be country"
-    },
-    {
-      "label": 20,
-      "data": "AUS CUB FIN RUS GER CHN USA SEY",
-      "keywords": "FIN, USA, CHN",
-      "explanation": "The sequence has some commonly used country keywords so the label should be country"
-    },
-    {
-      "label": 26,
-      "data": "Rutherford Anderson Sevier Obion Lauderdale Henry Henry Williamson Knox Montgomery Knox Houston Decatur Lauderdale Rutherford Hardin Haywood Hardin McMinn Weakley Sullivan Henry Dyer Sullivan Sullivan Henry Henry Grundy Franklin Anderson Hardin Henry Lauderdale Anderson Union Knox Lauderdale Houston Henry Henry Hardin Hamilton Hamilton Rutherford Knox Davidson Rutherford Henry Wilson Lauderdale Unicoi Rutherford Rutherford Rutherford Decatur Weakley Rutherford Hardin Rutherford Williamson Henry Rutherford Henry Jefferson Knox Lauderdale Cocke Montgomery Shelby Hamilton Davidson Lauderdale Shelby Knox Davidson Knox Rutherford Rutherford Shelby Benton Hamilton Obion Knox McMinn Henry Henry Montgomery Davidson Smith Davidson Smith Smith Smith Lincoln",
-      "keywords": "Shelby, Cocke, Montgomery",
-      "explanation": "The sequence has some commonly used county keywords so the label should be county"
-    },
-    {
-      "label": 26,
-      "data": "San Francisco Sonoma Santa Clara Santa Clara Santa Clara Alameda Santa Clara San Mateo Alameda Santa Clara Alameda Contra Costa San Francisco Sonoma Alameda Contra Costa Alameda Sonoma Santa Clara Contra Costa Santa Clara Alameda Santa Clara San Mateo Alameda",
-      "keywords": "Clara, Francisco, San",
-      "explanation": "The sequence has some commonly used county keywords so the label should be county"
-    },
-    {
-      "label": 1,
-      "data": "The CxSAST API allows developers to create client scripts for working with CxSAST projects, code scans, and result reports. CxSAST is an application security service that can be integrated as part of... The W3AF API allows developers to programmatically consume W3AF, an open source web application attack and audit framework. This framework was designed to help secure web applications by finding and... The Envoy REST API allows developers to access and integrate the functionality of Envoy with other applications. Some example API methods include listing employees and retrieving employee details,... Medable is a cloud platform that provides HIPAA-compliant services to mobile and web applications. Using this API, you can build HIPAA compliant full-stack and scalable health applications in a... The Mozilla Data Store API allows to store and share data available on Firefox OS and internal applications. It works as an intermediary regardless of API data structures and formats. Resources...",
-      "keywords": "audit, service, other",
-      "explanation": "The sequence has some commonly used description keywords so the label should be description"
-    },
-    {
-      "label": 1,
-      "data": "Provide the basic methods for connecting to the resource and performing simple actions Provide bulk operations to get all the users from the resource Provides the methods to schedule the adapter. Provides the methods to manage groups and organizations on your resources. Helps define the resource, but is not easily modified by administrators.",
-      "keywords": "on, bulk, performing",
-      "explanation": "The sequence has some commonly used description keywords so the label should be description"
-    },
-    {
-      "label": 29,
-      "data": "7:16 8:19",
-      "keywords": "7:16, 8:19",
-      "explanation": "The sequence has some commonly used duration keywords so the label should be duration"
-    },
-    {
-      "label": 29,
-      "data": "205 178 183 231 144 190 178 182 232 225 326 179 169 183 177 206 226 191 235 276 249",
-      "keywords": "182, 206, 249",
-      "explanation": "The sequence has some commonly used duration keywords so the label should be duration"
-    },
-    {
-      "label": 27,
-      "data": "format Paperback format Paperback format Paperback format Paperback format Paperback format Paperback format Hardcover format Paperback format Paperback format Paperback format Paperback format Paperback format Paperback format Paperback format Paperback format Paperback format format Paperback format Mass Market Paperback format Mass Market Paperback format Mass Market Paperback format Mass Market Paperback format Hardcover format Hardcover format Mass Market Paperback format Paperback format Paperback format Paperback format Hardcover format Hardcover",
-      "keywords": "Paperback, Market, Hardcover",
-      "explanation": "The sequence has some commonly used format keywords so the label should be format"
-    },
-    {
-      "label": 27,
-      "data": "format Paperback format Copertina morbida con sovraccoperta format Paperback format Paperback format Paperback format Paperback format Paperback format Paperback format Paperback format Paperback format Paperback format Paperback format Paperback",
-      "keywords": "Paperback, morbida, Copertina",
-      "explanation": "The sequence has some commonly used format keywords so the label should be format"
-    },
-    {
-      "label": 25,
-      "data": "Co-ed Co-ed",
-      "keywords": "Co-ed",
-      "explanation": "The sequence has some commonly used gender keywords so the label should be gender"
-    },
-    {
-      "label": 25,
-      "data": "Co-ed Co-ed",
-      "keywords": "Co-ed",
-      "explanation": "The sequence has some commonly used gender keywords so the label should be gender"
-    },
-    {
-      "label": 10,
-      "data": "France, Tours Japan, Tokyo Japan, Tokyo Japan, Tokyo Japan, Tokyo France, Lille France, Lille Belgium, Brussels Belgium, Brussels Belgium, Brussels England, Greater London, Clerkenwell Belgium, Gullegem Belgium, Loker England, Greater London, Borough New Jersey, Princeton Belgium, Gent Belgium, Moen Belgium, Oostvleteren France, Lille France, Lille Belgium, Westvleteren France, Lille France, Lille Pennsylvania, Philadelphia",
-      "keywords": "Gullegem, Lille, Princeton",
-      "explanation": "The sequence has some commonly used location keywords so the label should be location"
-    },
-    {
-      "label": 10,
-      "data": "Hickman High School Hickman High School",
-      "keywords": "School, Hickman, High",
-      "explanation": "The sequence has some commonly used location keywords so the label should be location"
-    },
-    {
-      "label": 0,
-      "data": "Actual Winners >>> TSS4LSU",
-      "keywords": "TSS4LSU, Actual, Winners",
-      "explanation": "The sequence has some commonly used name keywords so the label should be name"
-    },
-    {
-      "label": 0,
-      "data": "Eryngium antiatlanticum Jury Eryngium antihystericum Rottb. Eryngium aquifolium Cav. Eryngium aquifolium var. barbarum Jahand. & Maire Eryngium argyreum Maire Eryngium atlanticum Batt. & Pit. Eryngium barrelieri Boiss. Eryngium bourgatii Gouan Eryngium bourgatii var. atlanticum Ball Eryngium bourgatii var. hispanicum Lange Eryngium bovei Boiss. Eryngium caespitiferum Font Quer & Pau Eryngium campestre L. Eryngium campestre var. algeriense Chabert Eryngium campestre var. virens Link Eryngium corniculatum Lam. Eryngium creticum Lam. Eryngium dichotomum Desf. Eryngium dichotomum var. attenuatum Maire Eryngium dichotomum var. ficariaefolium Ball Eryngium dichotomum var. variifolium (Coss.) H. Wolff Eryngium dilatatum Lam. Eryngium foetidum L. Eryngium glaciale Boiss. Eryngium glomeratum Lam. Eryngium ilicifolium Lam. Eryngium L. Eryngium maritimum L. Eryngium maroccanum Pit. Eryngium mauritanicum Pomel Eryngium planum L. Eryngium pusillum L. Eryngium tenue Lam. Eryngium tricuspidatum L. Eryngium tricuspidatum L. subsp. tricuspidatum Eryngium tricuspidatum subsp. bovei (Boiss.) Breton Eryngium tricuspidatum subsp. mauritanicum (Pomel) Batt. Eryngium tricuspidatum subsp. subintegrum (Maire & Weiller) Dobignard Eryngium tricuspidatum var. bovei (Boiss.) Batt. Eryngium tricuspidatum var. montanum Chabert Eryngium tricuspidatum var. subintegrum Maire & Weiller Eryngium triquetrum subsp. xauense (Pau) Jovet & Sauvage Eryngium triquetrum Vahl Eryngium triquetrum Vahl subsp. triquetrum Eryngium triquetrum var. carles-tolra Sennen & Mauricio Eryngium triquetrum var. xauense Pau Eryngium variifolium Coss. Eryngium \u00d7mohamedanii Font Quer & Pau",
-      "keywords": "variifolium, Dobignard, Rottb",
-      "explanation": "The sequence has some commonly used name keywords so the label should be name"
-    },
-    {
-      "label": 23,
-      "data": "Included in the bitbake/bin directory in yocto. see: http://www.crashcourse.ca/wiki/index.php/OE_bitbake-env_utility",
-      "keywords": "the, http, bitbake/bin",
-      "explanation": "The sequence has some commonly used notes keywords so the label should be notes"
-    },
-    {
-      "label": 23,
-      "data": "Short film Short film Hollywood Film Festival for Ensemble of the Year Palm Springs International Film Festival Ensemble Cast Award Phoenix Film Critics Society Award for Best Cast Nominated\u2014Central Ohio Film Critics Association for Best Ensemble Nominated\u2014San Diego Film Critics Society Award for Best Performance by an Ensemble Nominated\u2014Screen Actors Guild Award for Outstanding Performance by a Cast in a Motion Picture Nominated\u2014Washington D.C. Area Film Critics Association Award for Best Ensemble Nominated\u2014Central Ohio Film Critics Association for Best Ensemble 5 episodes In post-production",
-      "keywords": "Best, Festival, Nominated\u2014Washington",
-      "explanation": "The sequence has some commonly used notes keywords so the label should be notes"
-    },
-    {
-      "label": 17,
-      "data": "Midfield Midfield Midfield Midfield Midfield Midfield Defense Midfield Midfield Midfield Attacker Midfield Defense Midfield Defense Attacker Midfield Defense Attacker Attacker Defense Goalie Midfield Goalie Midfield Midfield Goalie Defense Forward Defense Midfield Midfield Midfield Attacker Goalie Defense Midfield Defense Midfield Midfield Midfield Midfield Midfield",
-      "keywords": "Defense, Forward, Midfield",
-      "explanation": "The sequence has some commonly used position keywords so the label should be position"
-    },
-    {
-      "label": 17,
-      "data": "Infield Outfield Infield Outfield",
-      "keywords": "Outfield, Infield",
-      "explanation": "The sequence has some commonly used position keywords so the label should be position"
-    },
-    {
-      "label": 6,
-      "data": "AC AC AC AC AC 12 14T AC AC AC 9T AC AC AC",
-      "keywords": "9T, 14T, AC",
-      "explanation": "The sequence has some commonly used rank keywords so the label should be rank"
-    },
-    {
-      "label": 6,
-      "data": "#1 #2 #3 #4 #5 #6 #7 #8 #9 #10",
-      "keywords": "6, 2, 9",
-      "explanation": "The sequence has some commonly used rank keywords so the label should be rank"
-    },
-    {
-      "label": 18,
-      "data": "Punt Field Goal Touchdown Touchdown End of Half Touchdown Field Goal Punt Punt End of Game",
-      "keywords": "Field, End, Touchdown",
-      "explanation": "The sequence has some commonly used result keywords so the label should be result"
-    },
-    {
-      "label": 18,
-      "data": "Loss Loss Win Loss Loss",
-      "keywords": "Win, Loss",
-      "explanation": "The sequence has some commonly used result keywords so the label should be result"
-    },
-    {
-      "label": 28,
-      "data": "M M M M M M M",
-      "keywords": "M",
-      "explanation": "The sequence has some commonly used sex keywords so the label should be sex"
-    },
-    {
-      "label": 28,
-      "data": "M M M M M M M",
-      "keywords": "M",
-      "explanation": "The sequence has some commonly used sex keywords so the label should be sex"
-    },
-    {
-      "label": 4,
-      "data": "CA CA CA CA CA CA",
-      "keywords": "CA",
-      "explanation": "The sequence has some commonly used state keywords so the label should be state"
-    },
-    {
-      "label": 4,
-      "data": "MN MN KS KS KS FL WA CT MD NJ",
-      "keywords": "WA, KS, CT",
-      "explanation": "The sequence has some commonly used state keywords so the label should be state"
-    },
-    {
-      "label": 5,
-      "data": "Not For Sale Not For Sale Not For Sale Not For Sale Not For Sale Not For Sale Not For Sale Not For Sale Not For Sale Not For Sale Not For Sale Not For Sale",
-      "keywords": "Sale, For, Not",
-      "explanation": "The sequence has some commonly used status keywords so the label should be status"
-    },
-    {
-      "label": 5,
-      "data": "Locality Locality Locality Locality Locality Locality Locality Locality Locality Locality Locality Locality Locality Locality Locality Locality Locality Locality Locality Locality Locality Locality Locality Locality Locality Locality Locality Locality Locality Locality Locality Locality Locality Locality Locality Locality Main Locality Locality",
-      "keywords": "Main, Locality",
-      "explanation": "The sequence has some commonly used status keywords so the label should be status"
-    },
-    {
-      "label": 22,
-      "data": "DCM VNR TEP NSANY TK",
-      "keywords": "NSANY, DCM, TEP",
-      "explanation": "The sequence has some commonly used symbol keywords so the label should be symbol"
-    },
-    {
-      "label": 22,
-      "data": "DCM VNR TEP NSANY TK",
-      "keywords": "VNR, TEP, NSANY",
-      "explanation": "The sequence has some commonly used symbol keywords so the label should be symbol"
-    },
-    {
-      "label": 8,
-      "data": "Hong Kong Development XI Netherlands Australia Hong Kong Development XI China Sri Lanka Netherlands China England India",
-      "keywords": "India, Development, XI",
-      "explanation": "The sequence has some commonly used team keywords so the label should be team"
-    },
-    {
-      "label": 8,
-      "data": "WAS WAS WAS WAS WAS WAS WAS WAS MIN MIN",
-      "keywords": "WAS, MIN",
-      "explanation": "The sequence has some commonly used team keywords so the label should be team"
+      "label": 65,
+      "data": "95% 87% 51% 55% 52% 60% 46% 43% 60% 46% 49% 52% 55% 35% 42% 49%",
+      "keywords": "35, 51, 46",
+      "explanation": "The sequence has some commonly used capacity keywords so the label should be capacity"
     },
     {
       "label": 11,
-      "data": "LIR+IPv6 LIR+IPv6 LIR+IPv6 LIR + IPv6 LIR+IPv6 LIR+IPv6 LIR+IPv6 LIR+IPv6 LIR+IPv6 LIR+IPv6 LIR+IPv6",
-      "keywords": "IPv6, LIR+IPv6, LIR",
-      "explanation": "The sequence has some commonly used type keywords so the label should be type"
+      "data": "Fall Fun, Holiday, Tours Art Museums & Centers, Fall Fun, Holiday, Shopping Fall Fun, Holiday, Tours Fall Fun, Farms & Orchards Art Museums & Centers, Fall Fun",
+      "keywords": "Farms, Tours, Centers",
+      "explanation": "The sequence has some commonly used category keywords so the label should be category"
     },
     {
       "label": 11,
-      "data": "BANT",
-      "keywords": "BANT",
-      "explanation": "The sequence has some commonly used type keywords so the label should be type"
-    },
-    {
-      "label": 9,
-      "data": "25.6 33.2 30.6 30.3 33.0 29.7",
-      "keywords": "30.6, 33.0, 25.6",
-      "explanation": "The sequence has some commonly used weight keywords so the label should be weight"
-    },
-    {
-      "label": 9,
-      "data": "28.6 33.5",
-      "keywords": "28.6, 33.5",
-      "explanation": "The sequence has some commonly used weight keywords so the label should be weight"
+      "data": "Non-Methane Hydrocarbons Non-Methane Hydrocarbons Greenhouse Gases Greenhouse Gases Greenhouse Gases Greenhouse Gases Greenhouse Gases Non-Methane Hydrocarbons Non-Methane Hydrocarbons Non-Methane Hydrocarbons Non-Methane Hydrocarbons Greenhouse Gases Greenhouse Gases Greenhouse Gases Greenhouse Gases Greenhouse Gases",
+      "keywords": "Gases, Non-Methane, Hydrocarbons",
+      "explanation": "The sequence has some commonly used category keywords so the label should be category"
     },
     {
       "label": 7,
-      "data": "1999 2006 2004 2005 2003",
-      "keywords": "2003, 2004, 2006",
+      "data": "Los Angeles Toronto New York",
+      "keywords": "Angeles, York, New",
+      "explanation": "The sequence has some commonly used city keywords so the label should be city"
+    },
+    {
+      "label": 7,
+      "data": "Saint Paul Florence Tacoma Marksville Saint Petersburg Melbourne Atlantic City Memphis Cadott Nashville Cadott Thackerville Calgary Pomona Twin Lakes Twin Lakes Twin Lakes Davenport Davenport Deadwood Bowmanville Bowmanville Primm Lancaster Palmer Windsor Saint Leonard Anderson Bonner Springs Lake Charles Gretna Concord Cherokee Mahnomen New Town Annapolis Fayetteville Atlantic City Nashville Snoqualmie Bossier City",
+      "keywords": "Cherokee, Florence, Leonard",
+      "explanation": "The sequence has some commonly used city keywords so the label should be city"
+    },
+    {
+      "label": 21,
+      "data": "IN IN IN IN IN IN IN IN IN IN",
+      "keywords": "IN",
+      "explanation": "The sequence has some commonly used class keywords so the label should be class"
+    },
+    {
+      "label": 21,
+      "data": "Troublemaker Shelf Desert System ex-Thug ex-Thug Scree Delinquent Delinquent Atmosphere River Ridge Boulder Delta ex-Psychopath Troublemaker Blue regimental cruiser battle-cruiser (First Class) Interstitial/Exploratory",
+      "keywords": "Shelf, Scree, First",
+      "explanation": "The sequence has some commonly used class keywords so the label should be class"
+    },
+    {
+      "label": 56,
+      "data": "Class II Class II",
+      "keywords": "Class, II",
+      "explanation": "The sequence has some commonly used classification keywords so the label should be classification"
+    },
+    {
+      "label": 56,
+      "data": "MI5 MI5 MI5 MI5 MI5 MI5 MI5 MI5 MI5 MI5 MI5 MI5 MI5 MI5 MI5",
+      "keywords": "MI5",
+      "explanation": "The sequence has some commonly used classification keywords so the label should be classification"
+    },
+    {
+      "label": 14,
+      "data": "ANCM VMST SDSM GAJA SDSM TOC SWIM PNA ARKM WHSC",
+      "keywords": "PNA, WHSC, SDSM",
+      "explanation": "The sequence has some commonly used club keywords so the label should be club"
+    },
+    {
+      "label": 14,
+      "data": "Liverpool Arsenal Manchester City Tottenham Hotspur Everton Chelsea Southampton Hull City Aston Villa Newcastle United West Bromwich Albion Cardiff City Manchester United Swansea City Norwich City Stoke City Fulham West Ham United Crystal Palace Sunderland",
+      "keywords": "Everton, City, Sunderland",
+      "explanation": "The sequence has some commonly used club keywords so the label should be club"
+    },
+    {
+      "label": 13,
+      "data": "AS FPAY REMI LAPS FP",
+      "keywords": "AS, LAPS, FP",
+      "explanation": "The sequence has some commonly used code keywords so the label should be code"
+    },
+    {
+      "label": 13,
+      "data": "FR9902 VVTS VVPT VVBM",
+      "keywords": "VVTS, VVBM, VVPT",
+      "explanation": "The sequence has some commonly used code keywords so the label should be code"
+    },
+    {
+      "label": 57,
+      "data": "Graphic Novel, Teen Graphic Novel, Teen Graphic Novel, Teen",
+      "keywords": "Graphic, Novel, Teen",
+      "explanation": "The sequence has some commonly used collection keywords so the label should be collection"
+    },
+    {
+      "label": 57,
+      "data": "Fiction, Children's Fiction, Children's Fiction, Children's Fiction, Children's Fiction, Children's",
+      "keywords": "'s, Children, Fiction",
+      "explanation": "The sequence has some commonly used collection keywords so the label should be collection"
+    },
+    {
+      "label": 58,
+      "data": "db+1 d+1 db+2 d+2 db+3 d+3 db+4 d+4",
+      "keywords": "db+2, d+1, d+3",
+      "explanation": "The sequence has some commonly used command keywords so the label should be command"
+    },
+    {
+      "label": 58,
+      "data": "Vssadmin delete shadows Vssadmin list providers Vssadmin list shadows Vssadmin list shadowstorage Vssadmin list writers Vssadmin resize shadowstorage Vssadmin list volumes",
+      "keywords": "volumes, Vssadmin, shadowstorage",
+      "explanation": "The sequence has some commonly used command keywords so the label should be command"
+    },
+    {
+      "label": 20,
+      "data": "NTT DOCOMO\u2026 VANGUARD NA\u2026 TALLGRASS E\u2026 NISSAN ADR TEEKAY CORP\u2026",
+      "keywords": "CORP\u2026, E\u2026, TEEKAY",
+      "explanation": "The sequence has some commonly used company keywords so the label should be company"
+    },
+    {
+      "label": 20,
+      "data": "Bank of America Corp... Facebook Inc Ford Motor Co Pfizer Inc AT&T Inc",
+      "keywords": "Co, AT, Pfizer",
+      "explanation": "The sequence has some commonly used company keywords so the label should be company"
+    },
+    {
+      "label": 49,
+      "data": "Phones System Peripheral Gateway (PG) Deployments",
+      "keywords": "Phones, System, PG",
+      "explanation": "The sequence has some commonly used component keywords so the label should be component"
+    },
+    {
+      "label": 49,
+      "data": "Code Documentation User interface Miscellaneous",
+      "keywords": "interface, Documentation, User",
+      "explanation": "The sequence has some commonly used component keywords so the label should be component"
+    },
+    {
+      "label": 76,
+      "data": "AS EU EU EU EU AS EU EU EU EU",
+      "keywords": "EU, AS",
+      "explanation": "The sequence has some commonly used continent keywords so the label should be continent"
+    },
+    {
+      "label": 76,
+      "data": "EU EU EU EU EU EU EU EU EU EU EU EU AS AS EU AS EU AS EU EU EU",
+      "keywords": "AS, EU",
+      "explanation": "The sequence has some commonly used continent keywords so the label should be continent"
+    },
+    {
+      "label": 18,
+      "data": "(GEOCODE,CODEDESC,NUMFACT,TEXT,FIELDDESC) Insert into FACTBOOK.RO_2092 (GEOCODE,CODEDESC,NUMFACT,TEXT,FIELDDESC) values ('BK','Bosnia and Herzegovina',' -0.80','2014 est.','Inflation rate (consumer prices)');",
+      "keywords": "rate, prices, '2014",
+      "explanation": "The sequence has some commonly used country keywords so the label should be country"
+    },
+    {
+      "label": 18,
+      "data": "England England England England England England England England England England England England England England England England England England England England England England England England England England England England England England England England England England England England England England England England England England England England England England England England England England",
+      "keywords": "England",
+      "explanation": "The sequence has some commonly used country keywords so the label should be country"
+    },
+    {
+      "label": 27,
+      "data": "FLOYD FLOYD FLOYD FLOYD",
+      "keywords": "FLOYD",
+      "explanation": "The sequence has some commonly used county keywords so the label should be county"
+    },
+    {
+      "label": 27,
+      "data": "Putnam DeKalb Davidson Wilson Warren Shelby Jefferson Hamilton Jefferson Davidson Lincoln Shelby Davidson Giles Shelby White Hamilton Shelby Roane Davidson Shelby Weakley Hamilton Madison Davidson Shelby Wilson Madison Gibson Davidson Tipton Putnam Shelby Shelby Clay Davidson Montgomery Rutherford Hamilton Lincoln Lincoln Washington Shelby Carroll Davidson Carroll Hamblen Hamilton Haywood Shelby",
+      "keywords": "Jefferson, Hamblen, Putnam",
+      "explanation": "The sequence has some commonly used county keywords so the label should be county"
+    },
+    {
+      "label": 67,
+      "data": "Ask me for a photo",
+      "keywords": "me, Ask, a",
+      "explanation": "The sequence has some commonly used creator keywords so the label should be creator"
+    },
+    {
+      "label": 67,
+      "data": "Steven Gilbert Steven Gilbert Steven Gilbert Steven Gilbert Steven Gilbert Steven Gilbert Steven Gilbert Steven Gilbert Steven Gilbert Steven Gilbert Steven Gilbert Steven Gilbert Steven Gilbert Steven Gilbert Steven Gilbert Steven Gilbert Steven Gilbert Steven Gilbert Steven Gilbert Steven Gilbert Steven Gilbert Steven Gilbert Steven Gilbert Steven Gilbert Steven Gilbert Steven Gilbert Steven Gilbert Steven Gilbert Steven Gilbert Steven Gilbert Steven Gilbert Steven Gilbert Steven Gilbert Steven Gilbert Steven Gilbert Steven Gilbert Steven Gilbert Maria Mergel Maria Mergel Steven Gilbert Steven Gilbert Maria Mergel Maria Mergel Steven Gilbert Steven Gilbert Steven Gilbert Steven Gilbert Steven Gilbert Steven Gilbert Steven Gilbert Steven Gilbert Steven Gilbert Steven Gilbert Steven Gilbert Steven Gilbert Steven Gilbert Steven Gilbert Steven Gilbert Steven Gilbert",
+      "keywords": "Steven, Gilbert, Mergel",
+      "explanation": "The sequence has some commonly used creator keywords so the label should be creator"
+    },
+    {
+      "label": 53,
+      "data": "Insp. Johnson Solicitor Alfred Naden Leonard Evans",
+      "keywords": "Alfred, Johnson, Insp",
+      "explanation": "The sequence has some commonly used credit keywords so the label should be credit"
+    },
+    {
+      "label": 53,
+      "data": "Actor Actor Woman with Purple Wig Actor Administrator's Wife Aunt Olga Lady with Dog Countess Baranova Actor",
+      "keywords": "Baranova, 's, Woman",
+      "explanation": "The sequence has some commonly used credit keywords so the label should be credit"
+    },
+    {
+      "label": 61,
+      "data": "CAD USD",
+      "keywords": "CAD, USD",
+      "explanation": "The sequence has some commonly used currency keywords so the label should be currency"
+    },
+    {
+      "label": 61,
+      "data": "QAR SAR AED BHD KWD GBP CHF JPY GOLD SILVER",
+      "keywords": "BHD, AED, SILVER",
+      "explanation": "The sequence has some commonly used currency keywords so the label should be currency"
+    },
+    {
+      "label": 28,
+      "data": "Tuesday Tuesday Wednesday Wednesday Thursday Thursday Friday Friday Monday Monday",
+      "keywords": "Tuesday, Monday, Wednesday",
+      "explanation": "The sequence has some commonly used day keywords so the label should be day"
+    },
+    {
+      "label": 28,
+      "data": "Saturday Wednesday Tuesday Monday",
+      "keywords": "Saturday, Wednesday, Tuesday",
+      "explanation": "The sequence has some commonly used day keywords so the label should be day"
+    },
+    {
+      "label": 55,
+      "data": "3-4ft 3-4ft 4-5ft",
+      "keywords": "4-5ft, 3-4ft",
+      "explanation": "The sequence has some commonly used depth keywords so the label should be depth"
+    },
+    {
+      "label": 55,
+      "data": "62.1 63.0 62.4 62.4 62.6 62.3 62.9 62.4 62.8 62.9 62.5 62.7 62.8 62.5 62.9",
+      "keywords": "62.3, 62.7, 62.5",
+      "explanation": "The sequence has some commonly used depth keywords so the label should be depth"
+    },
+    {
+      "label": 1,
+      "data": "Year of fee payment: 4 Year of fee payment: 8 Year of fee payment: 12",
+      "keywords": "4, payment, 12",
+      "explanation": "The sequence has some commonly used description keywords so the label should be description"
+    },
+    {
+      "label": 1,
+      "data": "BioAcoustic Infill Panel (Black - Matte) Clear Hold Down Clip Support Hanger",
+      "keywords": "Matte, Infill, Black",
+      "explanation": "The sequence has some commonly used description keywords so the label should be description"
+    },
+    {
+      "label": 73,
+      "data": "Manirathnam Jone Amrthraj Dharani Ramana Sumathy Ram Aarthi Kumar Shaji Kailas Perarasu Rama Narayanan Selva Jeppi A.Y Susi Ganesan Tarun Gopi Sharadha Ramanathan Saravana Sakthi Siddhique Shaji Kailas Kiccha Prabhu Deva Chakri Toleti",
+      "keywords": "Sharadha, A.Y, Rama",
+      "explanation": "The sequence has some commonly used director keywords so the label should be director"
+    },
+    {
+      "label": 73,
+      "data": "Patric Ullaeus \"11 FRAMES PRODUCTIONS\" \"11 FRAMES PRODUCTIONS\" \"11 FRAMES PRODUCTIONS\"",
+      "keywords": "Ullaeus, Patric, ''",
+      "explanation": "The sequence has some commonly used director keywords so the label should be director"
+    },
+    {
+      "label": 25,
+      "data": "199.0 222.0 285.0 182.0 216.0 217.0 143.0 266.0 133.0 170.0 170.0 268.0 261.0 237.0 210.0 289.0 392.0 229.0 286.0 151.0",
+      "keywords": "210.0, 222.0, 216.0",
+      "explanation": "The sequence has some commonly used duration keywords so the label should be duration"
+    },
+    {
+      "label": 25,
+      "data": "3-5 working days, M-F only. Next working day on all orders placed before 1pm, M-F only. Saturday only on orders placed before Friday 1pm Click here for International Delivery Terms for overseas shipping.",
+      "keywords": "working, here, Click",
+      "explanation": "The sequence has some commonly used duration keywords so the label should be duration"
+    },
+    {
+      "label": 70,
+      "data": "Counselor Education/School Counseling and Guidance Services Educational Leadership and Administration, General Elementary Education and Teaching Health Teacher Education Physical Education Teaching and Coaching Reading Teacher Education Secondary Education and Teaching Special Education and Teaching, General",
+      "keywords": "Education, Teaching, and",
+      "explanation": "The sequence has some commonly used education keywords so the label should be education"
+    },
+    {
+      "label": 70,
+      "data": "Pre-school Primary - Government Primary - Catholic Primary - Other Non Government Secondary - Government Secondary - Catholic Secondary - Other Non Government Technical or further education institution University or tertiary institution Other Not Stated Total",
+      "keywords": "Technical, education, Other",
+      "explanation": "The sequence has some commonly used education keywords so the label should be education"
+    },
+    {
+      "label": 46,
+      "data": "232.0 0.0",
+      "keywords": "0.0, 232.0",
+      "explanation": "The sequence has some commonly used elevation keywords so the label should be elevation"
+    },
+    {
+      "label": 46,
+      "data": "227.0 0.0",
+      "keywords": "0.0, 227.0",
+      "explanation": "The sequence has some commonly used elevation keywords so the label should be elevation"
+    },
+    {
+      "label": 54,
+      "data": "unix windows",
+      "keywords": "unix, windows",
+      "explanation": "The sequence has some commonly used family keywords so the label should be family"
+    },
+    {
+      "label": 54,
+      "data": "19 400 47 11 59 106 299 12 291 299 360 103 33 295 69 102 331 333 121 333 8 115 326 64 186 10 224 194 72 184 73 229 230 254 170 155 73 64 118 215 224 143 46 174 148 131 12 182 132 255 39 277 180 86 12 10 133 32 28 66 75 163 181 170 164 40 9 134 285 18 118 46 26 23 50 77 50 117 24 225 114 316 119 321 321 141 71 9 70 76 27 67 44 166 179 88 115 132 116 99 120 62 62 28 150 165 264 42 62 150 121 4 90 150 291 40 291 159 156 205 240 4 108 187 96 121 108 293 277 158 26 174 128 28 2 127 1 360 219 232 182 379 58 76 180 278 230 103 46 228 16 253 349 133 104 265 16 136 263 1 272 325 64 190 144 264 3 30 230 103 181 249 250 103 92 157 168 156 162 105 46 6 320 4 173 83 110 102 121 95 110 176 298 174 185 297 173 171 128 295 375 190 156 363 212 288 179 196 154 132 131 51 100 33 66 38 123 51 96 112 5 38 318 31 65 96 190 129 189 190 269 227 213 316 304 214 13 26 222 143 248 208 114 364 23 288 17 75 89 108 40 176 85 130 72 82 84 83 33 222 1 217 74 88 114 86 155 102 42 144 252 16 79 223 37 289 113 80 56 23 23 254 242 197 168 300 219 255 129 171 150 279 235 240 105 291 105 105 123 63 360 284 248 25 41 149 277 148 239 68 170 152 166 263 91 235 212 151 12 167 14 30 222 45 118 163 312 8 294 117 93 157 336 158 355 39 16 258 351 360 287 281 286 130 44 304 218 44 38 352 282 270 45 192 40 2 159 224 124 155 192 14 182 41 57 169 37 55 89 248 185 140 157 158 115 260 255 72 133 43 231 254 155 110 204 288 211 242 360 163 120 119 27 43 360 218 324 173 267 276 258 261 260 82 81 203 301 162 399 194 220 194 300 41 194 298 68 295 242 354 55 58 119 368 36 164 133 185 75 60 49 144 21 127 76 56 41 148 21 82 127 161 205 18 244 161 307 272 283 285 169 284 255 250 328 341 122 334 245 201 201 179 51 189 279 8 189 144 177 11 108 193 174 172 307 82 235 313 149 306 299 205 231 83 140 73 15 29 31 30 1 90 299 277",
+      "keywords": "45, 70, 110",
+      "explanation": "The sequence has some commonly used family keywords so the label should be family"
+    },
+    {
+      "label": 40,
+      "data": "925 10K",
+      "keywords": "925, 10K",
+      "explanation": "The sequence has some commonly used fileSize keywords so the label should be fileSize"
+    },
+    {
+      "label": 40,
+      "data": "739,840 739,840 739,840 739,840 802,304 805,376 805,376 805,376 1,074,176 1,076,736 1,076,736 1,076,736",
+      "keywords": "739,840, 1,074,176, 1,076,736",
+      "explanation": "The sequence has some commonly used fileSize keywords so the label should be fileSize"
+    },
+    {
+      "label": 26,
+      "data": "Postscript PDF",
+      "keywords": "PDF, Postscript",
+      "explanation": "The sequence has some commonly used format keywords so the label should be format"
+    },
+    {
+      "label": 26,
+      "data": "Custom 13.5'' x 13.5'' Custom 16.5\" x 16.5\" Custom 16.5\" x 16.5\" Custom 16.5\" x 16.5\" Custom 16.5\" x 16.5\" Custom 14.2\" x 15\" Custom 14.2\" x 15\" SSI CEB (12\" X 10.5\") SSI CEB 12\" X 10.5\"",
+      "keywords": "12, x, ''",
+      "explanation": "The sequence has some commonly used format keywords so the label should be format"
+    },
+    {
+      "label": 29,
+      "data": "Male Male Female Female Female",
+      "keywords": "Male, Female",
+      "explanation": "The sequence has some commonly used gender keywords so the label should be gender"
+    },
+    {
+      "label": 29,
+      "data": "Co-ed Co-ed",
+      "keywords": "Co-ed",
+      "explanation": "The sequence has some commonly used gender keywords so the label should be gender"
+    },
+    {
+      "label": 50,
+      "data": "Public Safety Public Safety",
+      "keywords": "Safety, Public",
+      "explanation": "The sequence has some commonly used genre keywords so the label should be genre"
+    },
+    {
+      "label": 50,
+      "data": "Record Size: Duration:",
+      "keywords": "Record, Size, Duration",
+      "explanation": "The sequence has some commonly used genre keywords so the label should be genre"
+    },
+    {
+      "label": 41,
+      "data": "9-12 PRESCHOOL-4 5-8 PRESCHOOL-4",
+      "keywords": "9-12, PRESCHOOL-4, 5-8",
+      "explanation": "The sequence has some commonly used grades keywords so the label should be grades"
+    },
+    {
+      "label": 41,
+      "data": "09 - 12 08 - 12 09 - 12 08 - 12 08 - 12 09 - 12 09 - 12 09 - 12 08 - 12 09 - 12 09 - 12 09 - 12",
+      "keywords": "12, 09, 08",
+      "explanation": "The sequence has some commonly used grades keywords so the label should be grades"
+    },
+    {
+      "label": 30,
+      "data": "Health Professionals Pharmaceuticals/Health Products Retired Real Estate Electric Utilities",
+      "keywords": "Estate, Real, Retired",
+      "explanation": "The sequence has some commonly used industry keywords so the label should be industry"
+    },
+    {
+      "label": 30,
+      "data": "Legal Services Other Investment Pools and Funds State Government (OES Designation) Local Government (OES Designation) Insurance Carriers",
+      "keywords": "Local, OES, Services",
+      "explanation": "The sequence has some commonly used industry keywords so the label should be industry"
+    },
+    {
+      "label": 39,
+      "data": "isbn 1564149552 isbn 1600962122 isbn 0704346966 isbn 0486419223 isbn 0060851139",
+      "keywords": "0060851139, 0486419223, isbn",
+      "explanation": "The sequence has some commonly used isbn keywords so the label should be isbn"
+    },
+    {
+      "label": 39,
+      "data": "isbn 0765334321 isbn 0356500764 isbn 0345338588 isbn 1841498815 isbn 0553804677 isbn isbn isbn isbn 1429915439 isbn 0756407680 isbn 1433293188 isbn 0440174643 isbn 0765315432 isbn 0451458885 isbn 1401303382 isbn 0380813815 isbn 0739384252 isbn 1480527335 isbn 0441102670 isbn 1439148503 isbn 0312539517 isbn 0307347974 isbn 0618858679 isbn 0441013813 isbn 0679745580 isbn 0451933028 isbn 1416971734 isbn 0765309416 isbn 1843549182 isbn 034549749X",
+      "keywords": "0312539517, 0679745580, 0756407680",
+      "explanation": "The sequence has some commonly used isbn keywords so the label should be isbn"
+    },
+    {
+      "label": 33,
+      "data": "Taylor Rice (5) Jose Ortiz Manuel Franco Michael Luzzi Rosario Montanez Irad Ortiz Jr",
+      "keywords": "Jr, Rice, Irad",
+      "explanation": "The sequence has some commonly used jockey keywords so the label should be jockey"
+    },
+    {
+      "label": 33,
+      "data": "Gary Boulanger Ricardo Feliciano Erick Rodriguez Quincy Hamilton Antonio Gallardo",
+      "keywords": "Gary, Gallardo, Boulanger",
+      "explanation": "The sequence has some commonly used jockey keywords so the label should be jockey"
+    },
+    {
+      "label": 35,
+      "data": "English German Arabic",
+      "keywords": "English, Arabic, German",
+      "explanation": "The sequence has some commonly used language keywords so the label should be language"
+    },
+    {
+      "label": 35,
+      "data": "Japanese English French German Italian Spanish Korean Chinese (Mandarin",
+      "keywords": "Spanish, Japanese, Mandarin",
+      "explanation": "The sequence has some commonly used language keywords so the label should be language"
+    },
+    {
+      "label": 5,
+      "data": "Armory Sports Center Armory Sports Center",
+      "keywords": "Armory, Sports, Center",
+      "explanation": "The sequence has some commonly used location keywords so the label should be location"
+    },
+    {
+      "label": 5,
+      "data": "Troy, Michigan, United States De Pere, Wisconsin, United States Guadalupe Zacatecas, Mexico Lakewood, Colorado, United States Twinsburg Baton Rouge, Louisiana, United States Indianapolis Pittsburgh Albuquerque, New Mexico, United States Dayton, Ohio, United States Murray, Utah, United States Mandeville, Louisiana, United States Union City, Pennsylvania, United States Chicago, Illinois, United States Hampton, Virginia, United States Batesville, Mississippi, United States Utica, New York, United States Arcadia, California, United States Deerfield Beach, Florida, United States El Segundo Morgantown, West Virginia, United States Houston, Texas, United States Houston, Texas, United States Calabasas, California, United States N. Bellmore, New York, United States",
+      "keywords": "Louisiana, United, Pennsylvania",
+      "explanation": "The sequence has some commonly used location keywords so the label should be location"
+    },
+    {
+      "label": 51,
+      "data": "DUPLI COLOR MAGNETI MARELLI MOTIP MOTIP OE",
+      "keywords": "MAGNETI, DUPLI, MOTIP",
+      "explanation": "The sequence has some commonly used manufacturer keywords so the label should be manufacturer"
+    },
+    {
+      "label": 51,
+      "data": "BMW BMW BMW BMW BMW BMW BMW BMW",
+      "keywords": "BMW",
+      "explanation": "The sequence has some commonly used manufacturer keywords so the label should be manufacturer"
+    },
+    {
+      "label": 0,
+      "data": "Acer glabrum var. glabrum \"New Mexico maple\" Acer negundo \"boxelder\" Arabidopsis thaliana \"mouseear cress\" Atriplex patula \"spear saltbush\" Betula occidentalis \"water birch\" Betula occidentalis \"water birch\" Celtis reticulata Clematis occidentalis \"purple virgins-bower\" Clematis orientalis \"Oriental virgins-bower\" Clematis orientalis \"Oriental virgins-bower\" Clematis orientalis \"Oriental virgins-bower\" Convolvulus arvensis \"field bindweed\" Cornus sericea \"redosier dogwood\" Cornus sericea \"redosier dogwood\" Cornus sericea \"redosier dogwood\" Cornus sericea \"redosier dogwood\" Crataegus douglasii var. rivularis Cynoglossum officinale \"gypsyflower\" Geranium viscosissimum var. incisum \"sticky purple geranium\" Humulus lupulus \"common hop\" Humulus lupulus \"common hop\" Humulus lupulus \"common hop\" Humulus lupulus \"common hop\" Linaria dalmatica \"Dalmatian toadflax\" Lonicera involucrata var. involucrata \"twinberry honeysuckle\" Mahonia repens \"Oregongrape\" Penstemon eatonii var. eatonii Penstemon palmeri var. palmeri \"Palmer's beardtongue\" Perityle stansburyi \"Stansbury's rockdaisy\" Physocarpus alternans \"dwarf ninebark\" Physocarpus alternans \"dwarf ninebark\" Physocarpus monogynus \"mountain ninebark\" Picea pungens \"Colorado blue spruce\" Picea pungens \"Colorado blue spruce\" Populus angustifolia \"narrow-leaf cottonwood\" Populus tremuloides \"quaking aspen\" Prunus virginiana \"chokecherry\" Prunus virginiana \"chokecherry\" Rhus aromatica var. trilobata \"skunkbush sumac\" Rhus aromatica var. trilobata \"skunkbush sumac\" Ribes cereum \"wax currant\" Rosa woodsii \"Woods' rose\" Rosa woodsii \"Woods' rose\" Salix exigua \"narrow-leaf willow\" Salix x fragilis hybrid [alba x euxina] Sambucus caerulea Sambucus caerulea Sanguisorba minor \"small burnet\" Setaria pumila subsp. pumila \"yellow foxtail\" Solanum dulcamara \"climbing nightshade\" Sphaeralcea munroana \"Munroe's globemallow\"",
+      "keywords": "gypsyflower, spruce, tremuloides",
+      "explanation": "The sequence has some commonly used name keywords so the label should be name"
+    },
+    {
+      "label": 0,
+      "data": "n-pentane (n-C5H12) n-pentane (n-C5H12) n-pentane (n-C5H12) n-pentane (n-C5H12) n-pentane (n-C5H12) n-pentane (n-C5H12) n-pentane (n-C5H12) n-pentane (n-C5H12) n-pentane (n-C5H12) n-pentane (n-C5H12) n-pentane (n-C5H12) n-pentane (n-C5H12) n-pentane (n-C5H12) n-pentane (n-C5H12) n-pentane (n-C5H12) n-pentane (n-C5H12) n-pentane (n-C5H12) n-pentane (n-C5H12) n-pentane (n-C5H12) n-pentane (n-C5H12) n-pentane (n-C5H12) n-pentane (n-C5H12) n-pentane (n-C5H12) n-pentane (n-C5H12) n-pentane (n-C5H12) n-pentane (n-C5H12) n-pentane (n-C5H12) n-pentane (n-C5H12) n-pentane (n-C5H12) n-pentane (n-C5H12) n-pentane (n-C5H12) n-pentane (n-C5H12) n-pentane (n-C5H12) n-pentane (n-C5H12) n-pentane (n-C5H12) n-pentane (n-C5H12) n-pentane (n-C5H12) n-pentane (n-C5H12) n-pentane (n-C5H12) n-pentane (n-C5H12) n-pentane (n-C5H12) n-pentane (n-C5H12) n-pentane (n-C5H12) n-pentane (n-C5H12) n-pentane (n-C5H12) n-pentane (n-C5H12)",
+      "keywords": "n-pentane, n-C5H12",
+      "explanation": "The sequence has some commonly used name keywords so the label should be name"
+    },
+    {
+      "label": 60,
+      "data": "Canada United States United States Canada Canada",
+      "keywords": "United, Canada, States",
+      "explanation": "The sequence has some commonly used nationality keywords so the label should be nationality"
+    },
+    {
+      "label": 60,
+      "data": "German Spanish Australian British Finnish German French Brazilian British German Mexican British German Australian French Mexican Finnish Venezuelan French French Finnish Dutch British",
+      "keywords": "Mexican, Australian, Spanish",
+      "explanation": "The sequence has some commonly used nationality keywords so the label should be nationality"
+    },
+    {
+      "label": 23,
+      "data": "(see note 1)",
+      "keywords": "see, note, 1",
+      "explanation": "The sequence has some commonly used notes keywords so the label should be notes"
+    },
+    {
+      "label": 23,
+      "data": "notes Notes are private! notes Notes are private! notes Notes are private! notes Notes are private! notes Notes are private! notes Notes are private!",
+      "keywords": "are, Notes, notes",
+      "explanation": "The sequence has some commonly used notes keywords so the label should be notes"
+    },
+    {
+      "label": 68,
+      "data": "Transportadora Julio Sim\u00f5es Continental Express Caribbean Aviation Air Midwest, opf. US Airways Express THY Horizon Air TANS Harbour Air Pelita Air Service Siam Air Sports Denim Air, opf. Air Nostrum TAME Ecuador Tiramavia, opf. Aerocom SAVE American Eagle Airlines Northwest Airlines Northwest Airlines Air Alg\u00e9rie ERA Aviation Star Air African Commuter Services Sichuan Airlines FedEx, opf. Baron Aviation VASP Bearskin Airlines Euro Asia Aviation Alaska Airlines Air China THY Enimex One Leasing Belgian AF Iranian Revolutionary Guard STAR Aviation Pakistan AF Air France Airwork NZ Borki Air Club Bering Air Wright Stuff Air Alg\u00e9rie Air Industria, opf. Minerva Airlines Mountain Air Cargo, opf. FedEx Rossair Contracts, opf. Red Cross Singapore Airlines Xiamen Airlines US Navy Dancing Wind Aviation Aerotaxi Ashanti Gold Fields TransAsia Airways T\u00e1xi A\u00e9reo Pinhal One Leasing Spanish AF RAM Air Regional THY Cubana 748 Air Services FS Corsair Inc Iraq AF US Army Ibiza Flights Grand Aire Express Grand Aire Express SkyWay Enterprises Uzbekistan Airways Zapolyarye Airlines private Superior Aviation Trans Intair Empire Airlines, opf. FedEx Wetrafa Biman Bangladesh Transwest Air Unknown Sudan AF Sino Swearingen Air Regional Dniproavia Avirex Colombian Police Ukrainian Cargo Airways, opf. D.R. Congo AF Professional Maintenance Services, opf. D.R. Congo Government Uzbekistan Airways Pecotox Air Blue Line DK&L Comp. Royal Flying Doctor Service private Angolan AF Polyarnye Avialinii Oso-Rio LLC Japanese Navy Whiteshell Air Service Southwest Airlines UM Air Showa Air AW Aerowest Impulse Airlines, opf. QantasLink/Impulse",
+      "keywords": "Belgian, Minerva, Wetrafa",
+      "explanation": "The sequence has some commonly used operator keywords so the label should be operator"
+    },
+    {
+      "label": 68,
+      "data": "Cast (SSIS Expression): Convert SSIS Data Types () (Parentheses) (SSIS Expression) + (Add) (SSIS Expression) + (Concatenate) (SSIS Expression) - (Subtract) (SSIS Expression) - (Negate) (SSIS Expression) * (Multiply) (SSIS Expression) / (Divide) (SSIS Expression) % (Modulo) (SSIS Expression) || (Logical OR) (SSIS Expression) && (Logical AND) (SSIS Expression) ! (Logical Not) (SSIS Expression) | (Bitwise Inclusive OR) (SSIS Expression) ^ (Bitwise Exclusive OR) (SSIS Expression) & (Bitwise AND) (SSIS Expression) ~ (Bitwise Not) (SSIS Expression) == (Equal) (SSIS Expression) != (Unequal) (SSIS Expression) > (Greater Than) (SSIS Expression) < (Less Than) (SSIS Expression) >= (Greater Than or Equal To) (SSIS Expression) <= (Less Than or Equal To) (SSIS Expression) ? : (Conditional) (SSIS Expression)",
+      "keywords": "SSIS, Bitwise, or",
+      "explanation": "The sequence has some commonly used operator keywords so the label should be operator"
+    },
+    {
+      "label": 44,
+      "data": "Mon Tues Wed Thurs Fri Sat Sun",
+      "keywords": "Sat, Mon, Thurs",
+      "explanation": "The sequence has some commonly used order keywords so the label should be order"
+    },
+    {
+      "label": 44,
+      "data": "1 2 3 4 5 6 7 8 9 10 11",
+      "keywords": "9, 3, 7",
+      "explanation": "The sequence has some commonly used order keywords so the label should be order"
+    },
+    {
+      "label": 77,
+      "data": "umich.edu comcast.net ameritech.net 152.160 archive.org digitalrealm.net 141.211 aol.com googlebot.com 63.103 teoma.com 141.217 rr.com fastsearch.net 198.248 inktomisearch.com leapfrogbroadband.net looksmart.com comcastbusiness.net megapath.net [not listed: 66 organisations]",
+      "keywords": "141.217, 63.103, listed",
+      "explanation": "The sequence has some commonly used organisation keywords so the label should be organisation"
+    },
+    {
+      "label": 77,
+      "data": "wcbn.org comcast.net inktomisearch.com umich.edu 141.211 152.160 rr.com sbcglobal.net ameritech.net googlebot.com verizon.net charter.com cox.net aol.com tds.net 142.131 covad.net bellsouth.net rima-tde.net pacbell.net [not listed: 2,654 organisations]",
+      "keywords": "listed, inktomisearch.com, aol.com",
+      "explanation": "The sequence has some commonly used organisation keywords so the label should be organisation"
+    },
+    {
+      "label": 45,
+      "data": "Brazil Paraguay",
+      "keywords": "Paraguay, Brazil",
+      "explanation": "The sequence has some commonly used origin keywords so the label should be origin"
+    },
+    {
+      "label": 45,
+      "data": "Brazil Germany United States United Kingdom Europe Anonymous Proxy China",
+      "keywords": "China, Europe, Proxy",
+      "explanation": "The sequence has some commonly used origin keywords so the label should be origin"
+    },
+    {
+      "label": 48,
+      "data": "Mrs P Wainwright Mr K A Munnings + Miss S A Clark Mr E R Hemming Mr T Burling Mr J A Needham",
+      "keywords": "E, Munnings, K",
+      "explanation": "The sequence has some commonly used owner keywords so the label should be owner"
+    },
+    {
+      "label": 48,
+      "data": "ryan52, kaare, chorny bowtie azawawi mj41 bowtie szabgab azawawi jquelin, azawawi szabgab garu, azawawi Alias Alias Alias zenog submersible_toaster submersible_toaster jquelin, azawawi azawawi Alias submersible_toaster chorny bowtie azawawi szabgab Alias szabgab Alias, szabgab, Sewi, waxhead garu fayland, azawawi code4pay zenogantner garu ryan52 azawawi szabgab szabgab szabgab garu szabgab sewi azawawi azawawi azawawi azawawi azawawi azawawi azawawi azawawi bowtie bowtie garu garu garu garu garu garu claudio szabgab, azawawi, Alias azawawi",
+      "keywords": "fayland, szabgab, code4pay",
+      "explanation": "The sequence has some commonly used owner keywords so the label should be owner"
+    },
+    {
+      "label": 71,
+      "data": "1st 2nd 3rd",
+      "keywords": "2nd, 1st, 3rd",
+      "explanation": "The sequence has some commonly used person keywords so the label should be person"
+    },
+    {
+      "label": 71,
+      "data": "\u00d9\u2020\u00d8\u00b3\u00d8\u00b1\u00db\u0152\u00d9\u2020 \u00d8\u00b3\u00d8\u00aa\u00d9\u02c6\u00d8\u00af\u00d9\u2021: \u00d8\u00b2\u00d9\u2020\u00d8\u00af\u00d8\u00a7\u00d9\u2020\u00db\u0152 \u00d8\u00b1\u00d9\u02c6\u00d8\u00b2 Saeed Malekpour: Prisoner of the day Majid Tavakoli: Prisoner of the day \u00d8\u00a7\u00d8\u00ad\u00d8\u00b3\u00d8\u00a7\u00d9\u2020 \u00d9\u2020\u00d8\u00b1\u00d8\u00a7\u00d9\u201a\u00db\u0152: \u00d8\u00ac\u00d8\u00a7\u00d9\u2026\u00d8\u00b9\u00d9\u2021 \u00d8\u00b4\u00d9\u2020\u00d8\u00a7\u00d8\u00b3 \u00d9\u02c6 \u00d9\u2020\u00d9\u02c6\u00db\u0152\u00d8\u00b3\u00d9\u2020\u00d8\u00af\u00d9\u2021 \u00db\u00b1\u00db\u00b3\u00db\u00b0\u00db\u00b5-\u00db\u00b1\u00db\u00b3\u00db\u00b9\u00db\u00b1 Nasrin Sotoudeh: Prisoner of the day Nasrin Sotoudeh: Graffiti \u00da\u00af\u00d9\u02c6\u00d9\u2021\u00d8\u00b1 \u00d8\u00b9\u00d8\u00b4\u00d9\u201a\u00db\u0152: \u00d9\u2026\u00d8\u00a7\u00d8\u00af\u00d8\u00b1 \u00d8\u00b3\u00d8\u00aa\u00d8\u00a7\u00d8\u00b1 \u00d8\u00a8\u00d9\u2021\u00d8\u00b4\u00d8\u00aa\u00db\u0152 Abdollah Momeni: Prisoner of the day \u00d9\u2026\u00d8\u00ad\u00d9\u2026\u00d8\u00af \u00da\u00a9\u00d9\u201e\u00d8\u00a7\u00d9\u201e\u00db\u0152: \u00db\u0152\u00da\u00a9\u00db\u0152 \u00d8\u00a7\u00d8\u00b2 \u00d8\u00ad\u00d9\u2026\u00d9\u201e\u00d9\u2021 \u00da\u00a9\u00d9\u2020\u00d9\u2020\u00d8\u00af\u00da\u00af\u00d8\u00a7\u00d9\u2020 \u00d8\u00a8\u00d9\u2021 \u00d8\u00b3\u00d9?\u00d8\u00a7\u00d8\u00b1\u00d8\u00aa \u00d8\u00a7\u00db\u0152\u00d8\u00b1\u00d8\u00a7\u00d9\u2020 \u00d8\u00af\u00d8\u00b1 \u00d8\u00a8\u00d8\u00b1\u00d9\u201e\u00db\u0152\u00d9\u2020 Habibollah Golparipour: Prisoner of the day",
+      "keywords": "\u00d9\u02c6, the, \u00d8\u00b3\u00d8\u00aa\u00d9\u02c6\u00d8\u00af\u00d9\u2021",
+      "explanation": "The sequence has some commonly used person keywords so the label should be person"
+    },
+    {
+      "label": 43,
+      "data": "52 28 108",
+      "keywords": "52, 108, 28",
+      "explanation": "The sequence has some commonly used plays keywords so the label should be plays"
+    },
+    {
+      "label": 43,
+      "data": "5 0 5 2 3 4 1 0 5 5 0 3 2 1 4 1 2 2 0",
+      "keywords": "1, 2, 3",
+      "explanation": "The sequence has some commonly used plays keywords so the label should be plays"
+    },
+    {
+      "label": 17,
+      "data": "1 \u2013 381 1 \u2013 1 2 \u2013 381",
+      "keywords": "2, \u2013, 1",
+      "explanation": "The sequence has some commonly used position keywords so the label should be position"
+    },
+    {
+      "label": 17,
+      "data": "D LW D D RW D LW RW LW RW",
+      "keywords": "RW, LW, D",
+      "explanation": "The sequence has some commonly used position keywords so the label should be position"
+    },
+    {
+      "label": 32,
+      "data": "WheyFit Protein Creamy Vanilla WheyFit Protein Dutch Chocolate WheyFit Protein Strawberry Swirl WheyFit Protein Natural Vanilla WheyFit Protein Natural Chocolate WheyFit Protein Creamy Vanilla WheyFit Protein Dutch Chocolate WheyFit Protein Chocolate Peanut Butter WheyFit Protein Strawberry Swirl WheyFit Protein Natural Vanilla WheyFit Protein Natural Chocolate WheyFit Protein Creamy Vanilla WheyFit Protein Dutch Chocolate WheyFit Protein Chocolate Peanut Butter WheyFit Protein Strawberry Swirl WheyFit Protein Natural Vanilla WheyFit Protein Natural Chocolate",
+      "keywords": "Natural, Dutch, Creamy",
+      "explanation": "The sequence has some commonly used product keywords so the label should be product"
+    },
+    {
+      "label": 32,
+      "data": "Omega-3 Lemon Omega-3 Lemon Omega-3 Lemon",
+      "keywords": "Omega-3, Lemon",
+      "explanation": "The sequence has some commonly used product keywords so the label should be product"
+    },
+    {
+      "label": 42,
+      "data": "Success Enterbrain Namco Square Enix Square Enix Bandai Bandai Gust Nintendo Capcom Nintendo",
+      "keywords": "Gust, Enix, Enterbrain",
+      "explanation": "The sequence has some commonly used publisher keywords so the label should be publisher"
+    },
+    {
+      "label": 42,
+      "data": "Joindots GmbH Deep Silver Squaresoft Avanquest Software SEGA XSEED Games XSEED Games Gameloft SEGA SEGA Data East Bigben Interactive Capcom WayForward WayForward WayForward Tik Games LLC Focus Home Intera... Aksys Games Atlus Atlus Atlus SEGA SEGA SEGA SEGA SEGA SEGA SEGA Yacht Club Games Yacht Club Games 2K Games G-mode Mojo Bones G-mode Konami Electronic Arts Electronic Arts Electronic Arts Nintendo Electronic Arts Electronic Arts Hudson Engine Software Engine Software Engine Software Engine Software Nintendo Teyon SEGA Namco Activision Nintendo Smileboom Chillingo Ltd. 505 Games EnjoyUp Games Cinemax Cinemax Hudson GameOn Tecmo Tecmo Tecmo Tecmo SEGA SEGA SEGA SEGA SEGA SEGA SEGA SEGA SEGA SEGA SEGA SEGA SEGA SEGA SEGA SEGA SEGA SEGA SEGA SEGA SEGA SEGA SEGA SEGA SEGA SEGA Enix Eidos Gameloft Digital Leisure SEGA SEGA SEGA Square Enix Square Enix Springloaded Take Two Virtual Toys Nintendo Nintendo Disney Interactiv... Nintendo Gamelion Studios Gamelion Studios Tozai Games Tozai Games Tozai Games Activision Activision Activision Activision Activision Activision Nintendo Nintendo Nintendo Bandai Namco (2) Bandai Namco (2) THQ Electronic Arts Electronic Arts Enjoy Gaming Nintendo EnjoyUp Games Capcom The Game Bakers The Game Bakers Tecmo Nintendo Nintendo Hudson Hudson Hudson Bethesda Softworks LucasArts Zen Studios LucasArts Nintendo LucasArts Nintendo Nintendo Curve Digital Image & Form Image & Form Image & Form",
+      "keywords": "Eidos, Electronic, Mojo",
+      "explanation": "The sequence has some commonly used publisher keywords so the label should be publisher"
+    },
+    {
+      "label": 62,
+      "data": "Inside Range Inside Range Outside Range Outside Range",
+      "keywords": "Range, Inside, Outside",
+      "explanation": "The sequence has some commonly used range keywords so the label should be range"
+    },
+    {
+      "label": 62,
+      "data": "Alaska Saint Elias Alaska Wrangell Wrangell Wrangell Saint Elias Saint Elias Saint Elias Saint Elias Saint Elias Alaska Alaska Sierra Saint Elias Saint Elias Sawatch Sawatch Sawatch Cascade Sierra Sangre de Cristo Sawatch San Juan Sangre de Cristo Mosquito Front Sawatch Front Elk Mosquito Front Front San Juan White Mtn Sierra Sawatch Sangre de Cristo Sawatch Sawatch Sawatch Mosquito Sangre de Cristo Wrangell Cascade Sierra San Juan Elk Sawatch Sawatch San Juan Mosquito Elk Front Elk San Juan Sierra San Juan Sierra Sawatch Saint Elias Sawatch Sangre de Cristo Front San Juan Sierra San Juan Culebra Sangre de Cristo Sangre de Cristo Sierra Sangre de Cristo Mosquito San Juan Sierra Elk Sierra San Juan San Juan Sierra Elk San Juan Sawatch Sawatch San Juan Sierra Sierra",
+      "keywords": "Mtn, Saint, Elk",
+      "explanation": "The sequence has some commonly used range keywords so the label should be range"
+    },
+    {
+      "label": 8,
+      "data": "1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42",
+      "keywords": "41, 35, 33",
+      "explanation": "The sequence has some commonly used rank keywords so the label should be rank"
+    },
+    {
+      "label": 8,
+      "data": "1 2 3 4 5 6 7 8",
+      "keywords": "7, 5, 4",
+      "explanation": "The sequence has some commonly used rank keywords so the label should be rank"
+    },
+    {
+      "label": 64,
+      "data": "13rd 14th 15th",
+      "keywords": "15th, 13rd, 14th",
+      "explanation": "The sequence has some commonly used ranking keywords so the label should be ranking"
+    },
+    {
+      "label": 64,
+      "data": "4 5 6 7 8 9 10 11",
+      "keywords": "5, 8, 7",
+      "explanation": "The sequence has some commonly used ranking keywords so the label should be ranking"
+    },
+    {
+      "label": 34,
+      "data": "Europe North America",
+      "keywords": "Europe, America, North",
+      "explanation": "The sequence has some commonly used region keywords so the label should be region"
+    },
+    {
+      "label": 34,
+      "data": "Greater Gorongosa Ecosystem Greater Gorongosa Ecosystem Mozambique Greater Gorongosa Ecosystem Greater Gorongosa Ecosystem Greater Gorongosa Ecosystem Greater Gorongosa Ecosystem Greater Gorongosa Ecosystem Mozambique Greater Gorongosa Ecosystem Greater Gorongosa Ecosystem Greater Gorongosa Ecosystem Mozambique Greater Gorongosa Ecosystem Greater Gorongosa Ecosystem Greater Gorongosa Ecosystem Greater Gorongosa Ecosystem Greater Gorongosa Ecosystem Greater Gorongosa Ecosystem Greater Gorongosa Ecosystem Greater Gorongosa Ecosystem Greater Gorongosa Ecosystem Greater Gorongosa Ecosystem Greater Gorongosa Ecosystem Greater Gorongosa Ecosystem",
+      "keywords": "Ecosystem, Gorongosa, Greater",
+      "explanation": "The sequence has some commonly used region keywords so the label should be region"
+    },
+    {
+      "label": 69,
+      "data": "Christians Evangelicals Muslim",
+      "keywords": "Christians, Muslim, Evangelicals",
+      "explanation": "The sequence has some commonly used religion keywords so the label should be religion"
+    },
+    {
+      "label": 69,
+      "data": "Catholic Evangelical Protestant Black Protestant Mainline Protestant Other None",
+      "keywords": "Protestant, Catholic, Mainline",
+      "explanation": "The sequence has some commonly used religion keywords so the label should be religion"
+    },
+    {
+      "label": 72,
+      "data": "Qt libz libbz2 libxml2 Clucene Exiv2 FFMPEG DBus FAM Log4cxx CppUnit",
+      "keywords": "Exiv2, FFMPEG, libxml2",
+      "explanation": "The sequence has some commonly used requirement keywords so the label should be requirement"
+    },
+    {
+      "label": 72,
+      "data": "University Core Kinesiology Core KIN 099 KIN 105 KIN 107 KIN 150 KIN 211 KIN 308 KIN 322 KIN 350 KIN 360 KIN 420 KIN 421 KIN 430 Sports Management KIN 401 KIN 410 KIN 482 KIN 460 ACC 201 ACC 202 ECO 232 FIN 341 MGT 371 MKT 381 General Electives Total Hours",
+      "keywords": "Total, MGT, 232",
+      "explanation": "The sequence has some commonly used requirement keywords so the label should be requirement"
+    },
+    {
+      "label": 16,
+      "data": "L 3-5 L 2-0 W 2-0 T 1-1 L 0-2 L 0-2 W 2-4 T 1-1 L 0-1 W 1-3 W 2-1 L 1-0 L 4-1 T 4-4 T 1-1 W 0-3 L 0-1 T 0-0 T 1-1 L 1-0 W 0-1 L 1-2 L 2-1 L 3-1 W 1-0 L 0-1 W 0-2 T 0-0 T 2-2 W 2-3 W 3-1 L 0-3 W 0-2 L 0-2 W 0-1 T 2-2 L 2-4 T 2-2 L 0-3 L 2-0 L 0-3 L 0-3 L 0-2 W 0-1 L 5-2 W 0-1 W 4-1 T 1-1 L 0-4 T 0-0 L 0-2 L 4-1 L 1-2 W 0-1 W 0-4 W 2-1 L 3-0 T 0-0 W 0-1 T 1-1 W 1-5 W 1-0 L 4-1 L 0-2 T 1-1 L 0-5 W 1-3 L 0-1 W 1-3 T 1-1 W 2-1 W 0-1 L 0-2 T 0-0 L 0-2 T 1-1 T 1-1 L 2-0 L 1-0 W 4-0 W 1-0 T 1-1 T 1-1 W 1-2 L 0-2 W 0-2 W 1-2 L 2-3 W 0-2 L 0-2 W 1-3 T 1-1 W 0-2 L 1-3 T 1-1 W 0-1 L 1-3 T 1-1 T 2-2 L 0-2 W 0-2 W 2-0 W 0-3 W 1-2 W 0-4 T 0-0 T 0-0 W 1-2 L 2-4 T 3-3 W 1-2 L 1-3 W 1-2 T 2-2 T 0-0 W 0-1 L 0-1 L 2-3 T 2-2 T 1-1 L 0-2 W 1-0 W 1-0 W 1-3 W 2-0 T 1-1 W 1-0 W 1-2 T 2-2 L 0-3 L 0-1 W 2-3 T 1-1 W 1-2 T 1-1 W 1-3 L 0-3 T 1-1 W 0-2 T 0-0 T 2-2 L 2-0 W 1-2 L 0-2 T 2-2 L 0-1 T 2-2 T 0-0 L 1-2 L 2-1 W 1-4 T 1-1 W 0-1 W 1-3 T 1-1 T 1-1 L 1-0 W 1-2 W 1-0 L 2-1 T 1-1 W 3-1 L 3-4 L 2-1 L 2-1 L 0-3 W 3-4 L 0-1 L 0-2 T 2-2 L 0-3 T 0-0 T 1-1 T 2-2 L 1-4 L 1-2 L 3-2 W 0-2 L 1-3 W 2-0 L 1-0 W 0-3 L 0-2 W 0-3 L 2-0 W 1-2 T 1-1",
+      "keywords": "3-4, 5-2, 0-4",
+      "explanation": "The sequence has some commonly used result keywords so the label should be result"
+    },
+    {
+      "label": 16,
+      "data": "win loss",
+      "keywords": "loss, win",
+      "explanation": "The sequence has some commonly used result keywords so the label should be result"
+    },
+    {
+      "label": 74,
+      "data": "2,565 3,048 1,914 2,602 10,129",
+      "keywords": "10,129, 3,048, 2,602",
+      "explanation": "The sequence has some commonly used sales keywords so the label should be sales"
+    },
+    {
+      "label": 74,
+      "data": "319 241 345 208 817 343 182",
+      "keywords": "817, 319, 208",
+      "explanation": "The sequence has some commonly used sales keywords so the label should be sales"
+    },
+    {
+      "label": 37,
+      "data": "Expedited Shipping (USPS Priority Mail\u00ae) Local Pickup",
+      "keywords": "Pickup, Local, Shipping",
+      "explanation": "The sequence has some commonly used service keywords so the label should be service"
+    },
+    {
+      "label": 37,
+      "data": "CERT Advisory Mailing List Windows and .NET Magazine Security UPDATE NTBugtraq",
+      "keywords": ".NET, Windows, NTBugtraq",
+      "explanation": "The sequence has some commonly used service keywords so the label should be service"
+    },
+    {
+      "label": 31,
+      "data": "M M M F F M",
+      "keywords": "F, M",
+      "explanation": "The sequence has some commonly used sex keywords so the label should be sex"
+    },
+    {
+      "label": 31,
+      "data": "M M M M M M M M M M M",
+      "keywords": "M",
+      "explanation": "The sequence has some commonly used sex keywords so the label should be sex"
+    },
+    {
+      "label": 59,
+      "data": "Human Human",
+      "keywords": "Human",
+      "explanation": "The sequence has some commonly used species keywords so the label should be species"
+    },
+    {
+      "label": 59,
+      "data": "Lesser Kestrel Falco naumanni Pallid Harrier Circus macrourus Arabian Bustard Ardeotis arabs Savile's Bustard Lophotis savilei African Collared-dove Streptopelia roseogrisea Golden Nightjar Caprimulgus eximius Kordofan Lark Mirafra cordofanica Rusty Lark Mirafra rufa Cricket Longtail Spiloptila clamans Chestnut-bellied Starling Lamprotornis pulcher Black Scrub-robin Cercotrichas podobe",
+      "keywords": "Circus, cordofanica, arabs",
+      "explanation": "The sequence has some commonly used species keywords so the label should be species"
+    },
+    {
+      "label": 10,
+      "data": "FL FL FL FL AL LA DC PA NY MA NY PA OH IL MN IN MO KS CO CO CO MT OR WA OR CA CA CA CA NV TN TN GA TN LA LA LA LA LA NY NY NY NY LA CA CA KY OH NY CT CT CT LA LA SC SC NC MD VT VT ME VA NC VA NC GA FL NY LA TX TX TX AR LA 23 LA LA",
+      "keywords": "FL, ME, MO",
+      "explanation": "The sequence has some commonly used state keywords so the label should be state"
+    },
+    {
+      "label": 10,
+      "data": "MN MN MN MN",
+      "keywords": "MN",
+      "explanation": "The sequence has some commonly used state keywords so the label should be state"
+    },
+    {
+      "label": 9,
+      "data": "None None None None None None",
+      "keywords": "None",
+      "explanation": "The sequence has some commonly used status keywords so the label should be status"
+    },
+    {
+      "label": 9,
+      "data": "Unavailable Unavailable Unavailable Unavailable",
+      "keywords": "Unavailable",
+      "explanation": "The sequence has some commonly used status keywords so the label should be status"
+    },
+    {
+      "label": 22,
+      "data": "AZPN AZPN AZPN AZPN AZPN AZPN AZPN",
+      "keywords": "AZPN",
+      "explanation": "The sequence has some commonly used symbol keywords so the label should be symbol"
+    },
+    {
+      "label": 22,
+      "data": "S3345:SM GPLS:US GEPC:US 000791:CH XEB:CN EMBE:LN JAPAULOI:NL PTJYY:US JPFA:IJ 1JC1:GR JAP:SP JPIN:IN JPEP:US 0JP:GR",
+      "keywords": "PTJYY, LN, JAP",
+      "explanation": "The sequence has some commonly used symbol keywords so the label should be symbol"
+    },
+    {
+      "label": 2,
+      "data": "ThuAd WRIGH ThuAd ThuAd SAYAR",
+      "keywords": "ThuAd, SAYAR, WRIGH",
+      "explanation": "The sequence has some commonly used team keywords so the label should be team"
+    },
+    {
+      "label": 2,
+      "data": "Alabama Oregon Clemson Florida State Ohio State LSU UCLA Louisville Miami (FL) South Carolina Texas A&M Stanford Baylor Missouri Texas Tech Georgia Oklahoma St. Nebraska Oklahoma Michigan Fresno State North. Illinois Oregon State Michigan St. Wisconsin",
+      "keywords": "Carolina, Clemson, Oklahoma",
+      "explanation": "The sequence has some commonly used team keywords so the label should be team"
+    },
+    {
+      "label": 38,
+      "data": "Tri-State Velo/Amorosos Racing Team Tri-State Velo/Amoroso's Racing Team Tri-State Velo/Amoroso's Racing Team Tri-State Velo/Amoroso's Racing Team TRI-STATE VELO/AMOROSO'S RACING TEAM Tri-State Velo/Amoroso's Racing Team Amoroso's Racing Team Amoroso's Racing Team Tri-State Velo/Amoroso's Racing Team Tri-State Velo/Amoroso's Racing Team Tri-State Velo / Amoroso's Raci Tri-State Velo/Amoroso's Racing Tri-State Velo/Amoroso's Racing Tri-State Velo/Amoroso's Racing Team Tri-State Velo/Amoroso's Racing Team Tri-State Velo/Amoroso's Racing Team Tri-State Velo/Amoroso's Racing Tri-State Velo/Amoroso's Racing Team Tri-state Velo/amoroso's Racing Team Tri-State Velo/Amoroso's Racing Team Tri-State Velo/Amoroso's Racing Team Amoroso's Racing Team",
+      "keywords": "'S, Velo/Amorosos, Tri-State",
+      "explanation": "The sequence has some commonly used teamName keywords so the label should be teamName"
+    },
+    {
+      "label": 38,
+      "data": "Unattached Unattached",
+      "keywords": "Unattached",
+      "explanation": "The sequence has some commonly used teamName keywords so the label should be teamName"
+    },
+    {
+      "label": 4,
+      "data": "target target",
+      "keywords": "target",
+      "explanation": "The sequence has some commonly used type keywords so the label should be type"
+    },
+    {
+      "label": 4,
+      "data": "sponsor co-sponsor",
+      "keywords": "sponsor, co-sponsor",
+      "explanation": "The sequence has some commonly used type keywords so the label should be type"
+    },
+    {
+      "label": 12,
+      "data": "17-22 lbs 22-27 lbs 27-30 lbs",
+      "keywords": "lbs, 27-30, 17-22",
+      "explanation": "The sequence has some commonly used weight keywords so the label should be weight"
+    },
+    {
+      "label": 12,
+      "data": "22 oz. 26 oz. 1 lbs. 12 oz. 2 lb. 2 oz. 2 lbs. 10 oz. 3 lbs. 7 lb. 8 oz. 7 lb. 4 oz. 8 lb. 3 oz. 138 oz. 9 lb. 12 oz. 10 lb. 8 oz. 6 lb. 11 oz. 6lb 9oz 8lb 3oz 9 lb. 5 oz. 2 lb. 14 oz.",
+      "keywords": "3, 22, 4",
+      "explanation": "The sequence has some commonly used weight keywords so the label should be weight"
+    },
+    {
+      "label": 6,
+      "data": "2007 2009 1994 1994 1995 2001 2003 2009 2006 1996 2004 2003 1994 1994 1998 1999 2000 2000 1998 2001 1997 1998 1996 1999 2003 2001 2002 2006 1999 2000 2001 2002 2006 1989 1989 1990 1990 1991 1991 1992 1992 1993 1993 1994 1994 1995 1995 1993 1990 1993",
+      "keywords": "1998, 1999, 2006",
       "explanation": "The sequence has some commonly used year keywords so the label should be year"
     },
     {
-      "label": 7,
-      "data": "Multiple Multiple Multiple Multiple Multiple Multiple Multiple Multiple Multiple Multiple Multiple Multiple Multiple Multiple Multiple Multiple",
-      "keywords": "Multiple",
+      "label": 6,
+      "data": "All Years All Years All Years All Years",
+      "keywords": "Years, All",
       "explanation": "The sequence has some commonly used year keywords so the label should be year"
     }
   ]

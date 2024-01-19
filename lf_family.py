@@ -2,7 +2,7 @@ import numpy as np
 import nltk
 import wrench.dataset
 from sklearn.metrics import accuracy_score
-from LLMDP_chenjie.data_utils import preprocess_text
+from LLMDP.data_utils import preprocess_text
 from abc import ABC
 import re
 

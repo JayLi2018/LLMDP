@@ -6,8 +6,12 @@ torchvision
 torchaudio
 snorkel
 optuna
-wandb
+wandb 	
 alipy
 sentence-transformers
-openai
+openai==0.28
 ws-benchmark==1.1.2rc0
+colorful
+tenacity
+pgmpy
+tensorboardX

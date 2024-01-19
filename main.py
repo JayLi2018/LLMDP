@@ -1,14 +1,14 @@
 import argparse
-from LLMDP_chenjie.data_utils import load_wrench_data
-from LLMDP_chenjie.sampler import get_sampler
-from LLMDP_chenjie.lf_agent import get_lf_agent
-from LLMDP_chenjie.lf_family import create_label_matrix
-from LLMDP_chenjie.label_model import get_wrench_label_model, is_valid_snorkel_input
-from LLMDP_chenjie.end_model import train_disc_model
+from LLMDP.data_utils import load_wrench_data
+from LLMDP.sampler import get_sampler
+from LLMDP.lf_agent import get_lf_agent
+from LLMDP.lf_family import create_label_matrix
+from LLMDP.label_model import get_wrench_label_model, is_valid_snorkel_input
+from LLMDP.end_model import train_disc_model
 from wrench.search import grid_search
 from wrench.search_space import SEARCH_SPACE
-from LLMDP_chenjie.utils import print_dataset_stats, evaluate_lfs, evaluate_labels, evaluate_disc_model
-from LLMDP_chenjie.gpt_utils import create_user_prompt
+from LLMDP.utils import print_dataset_stats, evaluate_lfs, evaluate_labels, evaluate_disc_model
+from LLMDP.gpt_utils import create_user_prompt
 import numpy as np
 from sklearn.metrics import accuracy_score
 import wandb
@@ -16,7 +16,7 @@ import pprint
 from pathlib import Path
 import pickle
 import time
-import LLMDP_chenjie.logconfig
+import LLMDP.logconfig
 import logging 
 import copy
 
@@ -24,6 +24,7 @@ logger = logging.getLogger(__name__)
 
 def main(args):
 
+	overall_runtime_start = time.time()
 
 	train_dataset, valid_dataset, test_dataset = load_wrench_data(data_root=args.dataset_path,
 																  dataset_name=args.dataset_name,
@@ -137,7 +138,8 @@ def main(args):
 							  gamma=args.gamma,
 							  class_balance=class_balance,
 							  seed=seed,
-							  index_path=Path(args.dataset_path) / args.dataset_name / "train_index_unigram.json"
+							  index_path=Path(args.dataset_path) / args.dataset_name / "train_index_unigram.json",
+							  sample_instance_per_class=args.sample_instance_per_class
 							  )
 		logger.warning("STEP 2: creating lf agent, begain few shots")
 		lf_agent = get_lf_agent(train_dataset=train_dataset,
@@ -179,17 +181,20 @@ def main(args):
 
 		logger.warning("STEP 3: issue sampled user example from train dataset")
 		for t in range(args.num_query):
+		# for t in range(3):
 			query_idx = sampler.sample(label_model=label_model, end_model=disc_model)[0]
 			# if args.display:
 			query = create_user_prompt("", args.dataset_name, train_dataset, query_idx)
+			logger.warning(f"few shot query we selected : {query_idx}")
 			logger.warning("\nFew shot Query [{}]: {}".format(query_idx, query))
-
 			cur_raw_lfs, cur_lfs = lf_agent.create_lf(query_idx)
 			# with open('runs_and_lfs.pkl', 'wb') as file:
 			#     pickle.dump(runs_and_lfs, file)
 			if args.display:
 				for lf in cur_lfs:
 					print("LF: ", lf.info())
+					logger.warning(f"LF: {lf.info()}")
+				logger.warning(f"Ground truth: {train_dataset.labels[query_idx]}")
 				print("Ground truth: ", train_dataset.labels[query_idx])
 
 			gt_labels.append(train_dataset.labels[query_idx])
@@ -279,7 +284,10 @@ def main(args):
 				else:
 					metric = "acc"
 
+				grid_search_end=grid_search_start=0
 				if search_space is not None and args.tune_label_model:
+					logger.warning("start grid searching...")
+					grid_search_start = time.time()
 					train_dataset.weak_labels = L_train.tolist()
 					valid_dataset.weak_labels = L_val.tolist()
 					searched_paras = grid_search(label_model, dataset_train=train_dataset,
@@ -288,18 +296,26 @@ def main(args):
 												 search_space=search_space,
 												 n_repeats=1, n_trials=100, parallel=False)
 					label_model = get_wrench_label_model(args.label_model, **searched_paras, verbose=False)
-
-				start_time = time.time()
+					grid_search_end = time.time()
+					logger.warning("end grid searching...")
+				logger.warning("start fitting....")
+				snorkel_fit_start_time = time.time()
 				label_model.fit(dataset_train=train_dataset,
 								dataset_valid=valid_dataset,
 								)
-				end_time = time.time()
+				snorkel_fit_end_time = time.time()
+				logger.warning("end fitting.....")
+
+				logger.warning("start predicting.....")
+				snorkel_predict_start_time = time.time()
 				ys_tr = label_model.predict(L_train)
 				ys_tr_soft = label_model.predict_proba(L_train)
 				snorkel_ys_tr = ys_tr
 				snorkel_ys_tr_soft = ys_tr_soft
 				train_covered_indices = (np.max(L_train, axis=1) != -1) & (ys_tr != -1)  # indices covered by LFs
 				ys_val = label_model.predict(L_val)
+				snorkel_predict_end_time = time.time()
+				logger.warning("end predictibg....")
 				valid_covered_indices = (np.max(L_val, axis=1) != -1) & (ys_val != -1)  # indices covered by LFs
 
 				if args.default_class is None:
@@ -319,7 +335,11 @@ def main(args):
 				xs_tr = train_dataset.features[train_covered_indices, :]
 				ys_tr = ys_tr[train_covered_indices]
 				ys_tr_soft = ys_tr_soft[train_covered_indices, :]
+				end_train_end_time=end_train_start_time=0
+				end_predict_end_time=end_predict_start_time=0
 				if np.min(ys_tr) != np.max(ys_tr):
+					logger.warning("start training end_model...")
+					end_train_start_time = time.time()
 					disc_model = train_disc_model(model_type=args.end_model,
 												  xs_tr=xs_tr,
 												  ys_tr_soft=ys_tr_soft,
@@ -329,7 +349,12 @@ def main(args):
 												  tune_end_model=args.tune_end_model,
 												  tune_metric=args.tune_metric,
 												  seed=seed)
+					end_train_end_time = time.time()
+					logger.warning("end training end_model...")
 					# evaluate end model performance
+
+					logger.warning("start predicting using end model")
+					end_predict_start_time = time.time()
 					test_preds = disc_model.predict(test_dataset.features)
 					gt_test_labels = np.array(test_dataset.labels)
 					test_stats = evaluate_labels(gt_test_labels, test_preds, n_class=test_dataset.n_class)
@@ -337,7 +362,8 @@ def main(args):
 
 					valid_preds = disc_model.predict(valid_dataset.features)
 					valid_stats = evaluate_labels(gt_valid_labels, valid_preds, n_class=valid_dataset.n_class)
-
+					end_predict_end_time = time.time()
+					logger.warning("end_prediting using end model")
 				else:
 					test_perf = {"acc": np.nan, "f1": np.nan, "auc": np.nan}
 					valid_stats = {}
@@ -355,7 +381,11 @@ def main(args):
 				"end_model_pred_on_test": test_preds, "test_labels": test_dataset.labels}, 'agent_label_stats': lf_agent.label_stats}
 				runs_and_lfs[run]['iteration_stats'][t+1]['cur_lfs'] = copy.deepcopy(lfs)
 				runs_and_lfs[run]['iteration_stats'][t+1]['cur_raw_lfs'] = copy.deepcopy(raw_lfs)
-				runs_and_lfs[run]['iteration_stats'][t+1]['run_time_fit']=end_time - start_time
+				runs_and_lfs[run]['iteration_stats'][t+1]['run_time_snorkel_fit']=snorkel_fit_end_time - snorkel_fit_start_time
+				runs_and_lfs[run]['iteration_stats'][t+1]['run_time_snorkel_predict']=snorkel_predict_end_time - snorkel_predict_start_time
+				runs_and_lfs[run]['iteration_stats'][t+1]['run_time_endmodel_fit']=end_train_end_time - end_train_start_time
+				runs_and_lfs[run]['iteration_stats'][t+1]['run_time_endmodel_predict']=end_predict_end_time - end_predict_start_time
+				runs_and_lfs[run]['iteration_stats'][t+1]['run_time_grid_search'] = grid_search_end-grid_search_start
 
 				cur_result = {
 					"num_query": t+1,
@@ -400,7 +430,7 @@ def main(args):
 					pprint.pprint(valid_stats)
 					print("Test prediction stats (end model output):")
 					pprint.pprint(test_stats)
-
+			# exit()
 		if args.save_wandb:
 			wandb.run.summary["num_query"] = t+1
 			wandb.run.summary["lf_num"] = len(lfs)
@@ -435,7 +465,8 @@ def main(args):
 			wandb.finish()
 		runs_and_lfs[run]['full_lfs'] = lfs
 		runs_and_lfs[run]['full_raw_lfs'] = raw_lfs
-
+		overall_runtime_end = time.time()
+		runs_and_lfs[run]['overall_run_time'] = overall_runtime_end - overall_runtime_start
 	with open(f'runs_and_lfs_{formatted_time}.pkl', 'wb') as file:
 		pickle.dump(runs_and_lfs, file)
 
@@ -443,7 +474,7 @@ def main(args):
 if __name__ == '__main__':
 	parser = argparse.ArgumentParser()
 	# dataset
-	parser.add_argument("--dataset-path", type=str, default="/Users/chenjieli/Desktop/LLMDP_chenjie/data/wrench_data", help="dataset path")
+	parser.add_argument("--dataset-path", type=str, default="/Users/chenjieli/Desktop/LLMDP/data/wrench_data", help="dataset path")
 	parser.add_argument("--dataset-name", type=str, default="youtube", help="dataset name")
 	parser.add_argument("--feature-extractor", type=str, default="bert", help="feature for training end model")
 	parser.add_argument("--stop-words", type=str, default=None)
@@ -478,6 +509,8 @@ if __name__ == '__main__':
 	# prompting method
 	parser.add_argument("--lf-llm-model", type=str, default="gpt-3.5-turbo-0613")
 	parser.add_argument("--example-per-class", type=int, default=1)
+	parser.add_argument("--sample-instance-per-class", type=int, default=1) 
+		# added for uniform sampling in prompt selection
 	parser.add_argument("--return-explanation", action="store_true")
 	parser.add_argument("--example-selection", type=str, default="random", choices=["random", "neighbor"])
 	parser.add_argument("--temperature", type=float, default=0.7)

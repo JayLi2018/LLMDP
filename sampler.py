@@ -4,8 +4,13 @@ import random
 from alipy import ToolBox
 from sentence_transformers import SentenceTransformer, util
 from scipy.stats import entropy
-from LLMDP_chenjie.data_utils import build_revert_index
+from LLMDP.data_utils import build_revert_index
 from pathlib import Path
+import LLMDP.logconfig
+import logging
+from collections import defaultdict
+
+logger = logging.getLogger(__name__)
 
 
 def get_sampler(train_dataset, sampler_type, **kwargs):
@@ -15,6 +20,8 @@ def get_sampler(train_dataset, sampler_type, **kwargs):
         return SEUSampler(train_dataset, **kwargs)
     elif sampler_type == "weighted":
         return WeightedScoreSampler(train_dataset, **kwargs)
+    elif sampler_type == "uniform":
+        return UniformSampler(train_dataset, **kwargs)
     else:
         raise ValueError("Sampler not supported")
 
@@ -25,6 +32,31 @@ class Sampler(abc.ABC):
 
     def sample(self, batch_size=1, **kwargs):
         pass
+
+class UniformSampler(Sampler):
+    # a simple sampler that ensures for every class that exists in the 
+    # example, there will be the same number of samples being selected
+
+    def __init__(self, dataset, sample_instance_per_class, seed=0, **kwargs):
+        # label_class_name, sample_instance_per_class, 
+        self.dataset = dataset
+        logger.warning(f"len(dataset.labels): {len(dataset.labels)}")
+        self.available_classes_to_sample_from = {l: sample_instance_per_class for l in list(set(dataset.labels))}
+        self.label_and_indices = defaultdict(list)
+        for i, j in enumerate(self.dataset.labels):
+            self.label_and_indices[j].append(i)
+        logger.warning(f"uniform sampler available classes: {self.available_classes_to_sample_from}")
+        logger.warning(f"label and indices: {self.label_and_indices}")
+        
+    
+    def sample(self, batch_size=1, label_model=None, end_model=None):
+        available_to_sample = [k for k,v in self.available_classes_to_sample_from.items() if v!=0]
+        selected_key = random.choice(available_to_sample)
+        # Randomly select a value from the corresponding list
+        indices = random.sample(self.label_and_indices[selected_key], 2)
+        self.label_and_indices[selected_key] = [v for v in self.label_and_indices[selected_key] if v not in indices]
+        self.available_classes_to_sample_from[selected_key]-=batch_size
+        return indices
 
 
 class ActiveSampler(Sampler):
@@ -39,6 +71,7 @@ class ActiveSampler(Sampler):
         np.random.seed(seed)
         self.alibox = ToolBox(X=dataset.features, y=dataset.labels, query_type="AllLabels")
         self.label_index = self.alibox.IndexCollection([0]).difference_update([0])
+        # logger.warning(f"label_index: {self.label_index}")
         self.unlabel_index = self.alibox.IndexCollection(np.arange(len(dataset)))
 
     def sample(self, batch_size=1, label_model=None, end_model=None):

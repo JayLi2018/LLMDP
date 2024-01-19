@@ -3,9 +3,9 @@ from sklearn.metrics.pairwise import cosine_similarity
 import numpy as np
 import os
 from numpy.random import default_rng
-from LLMDP_chenjie.lf_family import KeywordLF, RegexLF, create_label_matrix
+from LLMDP.lf_family import KeywordLF, RegexLF, create_label_matrix
 import openai
-from LLMDP_chenjie.gpt_utils import create_prompt, create_cot_prompt, create_cot_user_prompt, create_user_prompt, extract_response, build_example
+from LLMDP.gpt_utils import create_prompt, create_cot_prompt, create_cot_user_prompt, create_user_prompt, extract_response, build_example
 from sentence_transformers import SentenceTransformer
 from tenacity import (
     retry,
@@ -13,11 +13,11 @@ from tenacity import (
     wait_random_exponential,
 )  # for exponential backoff
 
-from LLMDP_chenjie.data_utils import preprocess_text
+from LLMDP.data_utils import preprocess_text
 import nltk
 import re
 import time
-import LLMDP_chenjie.logconfig
+import LLMDP.logconfig
 import logging 
 from collections import defaultdict
 
@@ -362,7 +362,9 @@ class ChatGPTLFAgent:
         self.kwargs = kwargs
         # API related arguments
         self.model = kwargs.get("model", "gpt-3.5-turbo")
-        openai.api_key_path = kwargs.get("api_key_path", "/Users/chenjieli/Desktop/LLMDP_chenjie/openai-api.key")
+        # openai.api_key_path = kwargs.get("api_key_path", "/Users/chenjieli/Desktop/LLMDP/openai-api.key")
+        openai.api_key_path = kwargs.get("api_key_path", "/nfs/users/chenjie/LLMDP/openai-api.key")
+        
         self.example_per_class = kwargs.get("example_per_class", 1)
         self.example_selection = kwargs.get("example_selection", "random")
         if self.example_selection == "neighbor":

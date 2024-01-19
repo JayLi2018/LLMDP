@@ -1,7 +1,7 @@
 import numpy as np
 from sklearn.metrics import accuracy_score, recall_score, precision_score, f1_score, confusion_matrix, roc_auc_score
 from snorkel.labeling.analysis import LFAnalysis
-import LLMDP_chenjie.logconfig
+import LLMDP.logconfig
 import logging 
 
 logger = logging.getLogger(__name__)
@@ -129,6 +129,15 @@ def evaluate_disc_model(disc_model, test_dataset):
         test_auc = roc_auc_score(test_dataset.labels, y_probs[:, 1])
         test_f1 = f1_score(test_dataset.labels, y_pred)
     else:
+        logger.warning("test_dataset.labels")
+        logger.warning(test_dataset.labels)
+        logger.warning(f"len(test_dataset.labels : {len(test_dataset)}")
+        logger.warning(f"unique labels : {set(test_dataset.labels)}")
+        logger.warning(f"len(unique_labels) : {len(set(test_dataset.labels))}")
+        logger.warning("y_probs")
+        logger.warning(y_probs)
+        logger.warning(f"len y_probs : {len(y_probs)}")
+        logger.warning(f"len y_probs[0]: {len(y_probs[0])}")
         test_auc = roc_auc_score(test_dataset.labels, y_probs, average="macro", multi_class="ovo")
         test_f1 = f1_score(test_dataset.labels, y_pred, average="macro")
 

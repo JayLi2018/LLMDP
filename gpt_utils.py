@@ -2,7 +2,7 @@ import numpy as np
 import json
 import re
 import logging
-import LLMDP_chenjie.logconfig
+import LLMDP.logconfig
 import logging
 
 logger = logging.getLogger(__name__)
@@ -207,36 +207,75 @@ def create_cot_prompt(dataset_name, dataset, example_per_class=1, **kwargs):
     elif dataset_name == 'sato':
         task='LF creation for Sato dataset'
         task_info='In each iteration, the user will provide a sequence and a label indicating which class the sequence belongs to'
-        class_info="0 for name." \
-        "1 for description." \
-        "2 for age." \
-        "3 for city." \
-        "4 for state." \
-        "5 for status." \
-        "6 for rank." \
-        "7 for year." \
-        "8 for team." \
-        "9 for weight." \
-        "10 for location." \
-        "11 for type." \
-        "12 for code." \
-        "13 for club." \
-        "14 for category." \
-        "15 for artist." \
-        "16 for album." \
-        "17 for position." \
-        "18 for result." \
-        "19 for company." \
-        "20 for country." \
-        "21 for class." \
-        "22 for symbol." \
-        "23 for notes." \
-        "24 for address." \
-        "25 for gender." \
-        "26 for county." \
-        "27 for format." \
-        "28 for sex." \
-        "29 for duration."
+        class_info="9 for status." \
+"10 for state." \
+"11 for category." \
+"12 for weight." \
+"13 for code." \
+"14 for club." \
+"15 for artist." \
+"16 for result." \
+"17 for position." \
+"18 for country." \
+"19 for album." \
+"20 for company." \
+"21 for class." \
+"22 for symbol." \
+"23 for notes." \
+"24 for address." \
+"25 for duration." \
+"26 for format." \
+"27 for county." \
+"28 for day." \
+"29 for gender." \
+"30 for industry." \
+"31 for sex." \
+"32 for product." \
+"33 for jockey." \
+"34 for region." \
+"35 for language." \
+"36 for area." \
+"37 for service." \
+"38 for teamName." \
+"39 for isbn." \
+"40 for fileSize." \
+"41 for grades." \
+"42 for publisher." \
+"43 for plays." \
+"44 for order." \
+"45 for origin." \
+"46 for elevation." \
+"47 for affiliation." \
+"48 for owner." \
+"49 for component." \
+"50 for genre." \
+"51 for manufacturer." \
+"52 for brand." \
+"53 for credit." \
+"54 for family." \
+"55 for depth." \
+"56 for classification." \
+"57 for collection." \
+"58 for command." \
+"59 for species." \
+"60 for nationality." \
+"61 for currency." \
+"62 for range." \
+"63 for birthDate." \
+"64 for ranking." \
+"65 for capacity." \
+"66 for birthPlace." \
+"67 for creator." \
+"68 for operator." \
+"69 for religion." \
+"70 for education." \
+"71 for person." \
+"72 for requirement." \
+"73 for director." \
+"74 for sales." \
+"75 for affiliate." \
+"76 for continent." \
+"77 for organisation." 
 
     if "lf_type" in kwargs:
         lf_type = kwargs["lf_type"]
@@ -310,7 +349,8 @@ def create_cot_prompt(dataset_name, dataset, example_per_class=1, **kwargs):
     example_string = ""
     if example_per_class > 0:
         # use fixed examples
-        with open("/Users/chenjieli/Desktop/LLMDP_chenjie/examples.json") as json_file:
+        # with open("/Users/chenjieli/Desktop/LLMDP/examples.json") as json_file:
+        with open("/nfs/users/chenjie/LLMDP/examples.json") as json_file:
             example_dict = json.load(json_file)
 
         examples = example_dict[dataset_name]
@@ -441,36 +481,75 @@ def create_prompt(dataset_name, dataset, example_per_class=1, example_selection=
     elif dataset_name == 'sato':
         task='LF creation for Sato dataset'
         task_info='In each iteration, the user will provide a sequence and a label indicating which class the sequence belongs to'
-        class_info="0 for name." \
-            "1 for description." \
-            "2 for age." \
-            "3 for city." \
-            "4 for state." \
-            "5 for status." \
-            "6 for rank." \
-            "7 for year." \
-            "8 for team." \
-            "9 for weight." \
-            "10 for location." \
-            "11 for type." \
-            "12 for code." \
-            "13 for club." \
-            "14 for category." \
-            "15 for artist." \
-            "16 for album." \
-            "17 for position." \
-            "18 for result." \
-            "19 for company." \
-            "20 for country." \
-            "21 for class." \
-            "22 for symbol." \
-            "23 for notes." \
-            "24 for address." \
-            "25 for gender." \
-            "26 for county." \
-            "27 for format." \
-            "28 for sex." \
-            "29 for duration."
+        class_info="9 for status." \
+"10 for state." \
+"11 for category." \
+"12 for weight." \
+"13 for code." \
+"14 for club." \
+"15 for artist." \
+"16 for result." \
+"17 for position." \
+"18 for country." \
+"19 for album." \
+"20 for company." \
+"21 for class." \
+"22 for symbol." \
+"23 for notes." \
+"24 for address." \
+"25 for duration." \
+"26 for format." \
+"27 for county." \
+"28 for day." \
+"29 for gender." \
+"30 for industry." \
+"31 for sex." \
+"32 for product." \
+"33 for jockey." \
+"34 for region." \
+"35 for language." \
+"36 for area." \
+"37 for service." \
+"38 for teamName." \
+"39 for isbn." \
+"40 for fileSize." \
+"41 for grades." \
+"42 for publisher." \
+"43 for plays." \
+"44 for order." \
+"45 for origin." \
+"46 for elevation." \
+"47 for affiliation." \
+"48 for owner." \
+"49 for component." \
+"50 for genre." \
+"51 for manufacturer." \
+"52 for brand." \
+"53 for credit." \
+"54 for family." \
+"55 for depth." \
+"56 for classification." \
+"57 for collection." \
+"58 for command." \
+"59 for species." \
+"60 for nationality." \
+"61 for currency." \
+"62 for range." \
+"63 for birthDate." \
+"64 for ranking." \
+"65 for capacity." \
+"66 for birthPlace." \
+"67 for creator." \
+"68 for operator." \
+"69 for religion." \
+"70 for education." \
+"71 for person." \
+"72 for requirement." \
+"73 for director." \
+"74 for sales." \
+"75 for affiliate." \
+"76 for continent." \
+"77 for organisation." 
 
     if "lf_type" in kwargs:
         lf_type = kwargs["lf_type"]
@@ -543,7 +622,8 @@ def create_prompt(dataset_name, dataset, example_per_class=1, example_selection=
     example_string = ""
     if example_per_class > 0:
         # use fixed examples
-        with open("/Users/chenjieli/Desktop/LLMDP_chenjie/examples.json") as json_file:
+        # with open("/Users/chenjieli/Desktop/LLMDP/examples.json") as json_file:
+        with open("/nfs/users/chenjie/LLMDP/examples.json") as json_file:
             example_dict = json.load(json_file)
 
         examples = example_dict[dataset_name]

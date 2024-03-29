@@ -49,11 +49,14 @@ class UniformSampler(Sampler):
         logger.warning(f"label and indices: {self.label_and_indices}")
         
     
-    def sample(self, batch_size=1, label_model=None, end_model=None):
+    def sample(self, batch_size=1, label_model=None, end_model=None, seed=42):
+        # Set a seed for reproducibility
+        random.seed(seed)
         available_to_sample = [k for k,v in self.available_classes_to_sample_from.items() if v!=0]
+        available_to_sample.sort()
         selected_key = random.choice(available_to_sample)
         # Randomly select a value from the corresponding list
-        indices = random.sample(self.label_and_indices[selected_key], 2)
+        indices = random.sample(self.label_and_indices[selected_key], batch_size)
         self.label_and_indices[selected_key] = [v for v in self.label_and_indices[selected_key] if v not in indices]
         self.available_classes_to_sample_from[selected_key]-=batch_size
         return indices

@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../LLM_LF_Chenjie"
+		},
+		{
+			"path": "../wrench"
+		},
+		{
+			"path": "../cl4table"
+		},
+		{
+			"path": "../doduo"
+		}
+	],
+	"settings": {}
+}

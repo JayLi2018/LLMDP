@@ -12,10 +12,10 @@ console_handler.setFormatter(stream_formatter)
 
 timestamp = time.time()
 formatted_time = time.strftime("%Y%m%d%H%M", time.localtime(timestamp))
-file_handler=logging.FileHandler(f'logs/log_{formatted_time}.txt', 'a')
-file_handler.setFormatter(file_formatter)
+default_file_handler=logging.FileHandler(f'logs/log_{formatted_time}.txt', 'a')
+default_file_handler.setFormatter(file_formatter)
 
 root = logging.getLogger()
 root.addHandler(console_handler)
-root.addHandler(file_handler)
+root.addHandler(default_file_handler)
 root.setLevel(logging.WARNING)

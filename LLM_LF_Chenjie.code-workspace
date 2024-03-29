@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"path": "../LLM_LF_Chenjie"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "../cl4table"
+		},
+		{
+			"path": "../wrench"
+		},
+		{
+			"path": "../miniconda3/envs/llm_lf/lib/python3.9/site-packages/snorkel"
+		}
+	],
+	"settings": {}
+}

@@ -34,6 +34,7 @@ def evaluate_lfs(labels, L_train, lf_classes=None, n_class=2):
         "lf_acc_avg": lf_acc_avg,
         "lf_overlap_avg": lf_overlap_avg,
         "lf_conflict_avg": lf_conflict_avg,
+        "lf_conflicts":lf_stats["Conflicts"]
     }
 
     # evaluate the LF quality per class

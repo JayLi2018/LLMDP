@@ -25,6 +25,12 @@ logger = logging.getLogger(__name__)
 def main(args):
 
 	overall_runtime_start = time.time()
+	timestamp = time.time()
+	formatted_time = time.strftime("%Y%m%d%H%M", time.localtime(timestamp))
+	LLMDP.logconfig.root.removeHandler(LLMDP.logconfig.default_file_handler)
+	new_file_handler = logging.FileHandler(f'logs/log_{args.log_name}_{formatted_time}.txt', 'a')
+	new_file_handler.setFormatter(LLMDP.logconfig.file_formatter)
+	LLMDP.logconfig.root.addHandler(new_file_handler)
 
 	train_dataset, valid_dataset, test_dataset = load_wrench_data(data_root=args.dataset_path,
 																  dataset_name=args.dataset_name,
@@ -54,8 +60,8 @@ def main(args):
 	runs_and_lfs = {}
 	for run in range(args.runs):
 
-		timestamp = time.time()
-		formatted_time = time.strftime("%Y%m%d%H%M", time.localtime(timestamp))
+		# timestamp = time.time()
+		# formatted_time = time.strftime("%Y%m%d%H%M", time.localtime(timestamp))
 
 		runs_and_lfs[run] = {'iteration_stats':{}}
 		if args.save_wandb:
@@ -106,6 +112,8 @@ def main(args):
 										  tune_end_model=args.tune_end_model,
 										  tune_metric=args.tune_metric,
 										  seed=seed)
+			
+			
 			test_perf = evaluate_disc_model(disc_model, test_dataset)
 
 			if args.save_wandb:
@@ -165,6 +173,9 @@ def main(args):
 								max_ngram=args.max_ngram,
 								max_lf_per_iter=args.max_lf_per_iter,
 								sleep_time=args.sleep_time,
+								limited_sys_instance=args.limited_sys_instance,
+								sys_limit_cnt=args.sys_limit_cnt,
+								user_provide_instance_label=args.user_provide_instance_label
 								)
 		label_model = None
 		disc_model = None
@@ -180,14 +191,18 @@ def main(args):
 		start = 0  # the number of LFs applied in previous iteration
 
 		logger.warning("STEP 3: issue sampled user example from train dataset")
+		llm_response_time = 0
 		for t in range(args.num_query):
-		# for t in range(3):
-			query_idx = sampler.sample(label_model=label_model, end_model=disc_model)[0]
+			query_idx = sampler.sample(label_model=label_model, end_model=disc_model, seed=args.seed)[0]
 			# if args.display:
-			query = create_user_prompt("", args.dataset_name, train_dataset, query_idx)
+			query, gt_label= create_user_prompt("", args.dataset_name, train_dataset, query_idx, args.user_provide_instance_label)
 			logger.warning(f"few shot query we selected : {query_idx}")
 			logger.warning("\nFew shot Query [{}]: {}".format(query_idx, query))
-			cur_raw_lfs, cur_lfs = lf_agent.create_lf(query_idx)
+			
+			create_lf_time_start= time.time()
+			cur_raw_lfs, cur_lfs = lf_agent.create_lf(query_idx, gt_label, args.user_provide_instance_label)
+			create_lf_time_end = time.time()
+			llm_response_time+=(create_lf_time_end-create_lf_time_start)
 			# with open('runs_and_lfs.pkl', 'wb') as file:
 			#     pickle.dump(runs_and_lfs, file)
 			if args.display:
@@ -233,9 +248,10 @@ def main(args):
 				print("train_dataset:")
 				print(train_dataset)
 				
-				label_model.fit(dataset_train=train_dataset,
-								dataset_valid=valid_dataset,
-								)
+				# logger.warning("label model fit")
+				# label_model.fit(dataset_train=train_dataset,
+				# 				dataset_valid=valid_dataset,
+				# 				)
 
 			if t % args.train_iter == args.train_iter - 1:
 				runs_and_lfs[run]['iteration_stats'][t+1] = {}
@@ -288,14 +304,15 @@ def main(args):
 				if search_space is not None and args.tune_label_model:
 					logger.warning("start grid searching...")
 					grid_search_start = time.time()
-					train_dataset.weak_labels = L_train.tolist()
-					valid_dataset.weak_labels = L_val.tolist()
-					searched_paras = grid_search(label_model, dataset_train=train_dataset,
-												 dataset_valid=valid_dataset,
-												 metric=metric, direction='auto',
-												 search_space=search_space,
-												 n_repeats=1, n_trials=100, parallel=False)
-					label_model = get_wrench_label_model(args.label_model, **searched_paras, verbose=False)
+					# train_dataset.weak_labels = L_train.tolist()
+					# valid_dataset.weak_labels = L_val.tolist()
+					# searched_paras = grid_search(label_model, dataset_train=train_dataset,
+					# 							 dataset_valid=valid_dataset,
+					# 							 metric=metric, direction='auto',
+					# 							 search_space=search_space,
+					# 							 n_repeats=1, n_trials=args.trails_num, parallel=False)
+					# label_model = get_wrench_label_model(args.label_model, **searched_paras, verbose=False)
+					label_model = get_wrench_label_model(args.label_model, verbose=False)
 					grid_search_end = time.time()
 					logger.warning("end grid searching...")
 				logger.warning("start fitting....")
@@ -337,38 +354,53 @@ def main(args):
 				ys_tr_soft = ys_tr_soft[train_covered_indices, :]
 				end_train_end_time=end_train_start_time=0
 				end_predict_end_time=end_predict_start_time=0
+				test_preds=None
+				gt_test_labels=None
 				if np.min(ys_tr) != np.max(ys_tr):
 					logger.warning("start training end_model...")
 					end_train_start_time = time.time()
-					disc_model = train_disc_model(model_type=args.end_model,
-												  xs_tr=xs_tr,
-												  ys_tr_soft=ys_tr_soft,
-												  ys_tr_hard=ys_tr,
-												  valid_dataset=valid_dataset,
-												  soft_training=args.use_soft_labels,
-												  tune_end_model=args.tune_end_model,
-												  tune_metric=args.tune_metric,
-												  seed=seed)
-					end_train_end_time = time.time()
-					logger.warning("end training end_model...")
-					# evaluate end model performance
-
-					logger.warning("start predicting using end model")
-					end_predict_start_time = time.time()
-					test_preds = disc_model.predict(test_dataset.features)
-					gt_test_labels = np.array(test_dataset.labels)
-					test_stats = evaluate_labels(gt_test_labels, test_preds, n_class=test_dataset.n_class)
-					test_perf = evaluate_disc_model(disc_model, test_dataset)
-
-					valid_preds = disc_model.predict(valid_dataset.features)
-					valid_stats = evaluate_labels(gt_valid_labels, valid_preds, n_class=valid_dataset.n_class)
-					end_predict_end_time = time.time()
-					logger.warning("end_prediting using end model")
+					end_model_input_dict = {}
+					end_model_input_dict['xs_tr'] = xs_tr
+					end_model_input_dict['ys_tr_soft'] = ys_tr_soft
+					end_model_input_dict['ys_tr_hard'] = ys_tr
 				else:
-					test_perf = {"acc": np.nan, "f1": np.nan, "auc": np.nan}
-					valid_stats = {}
-					test_stats = {}
-					test_preds = np.nan
+					logger.warning("np.min(ys_tr) != np.max(ys_tr)! no result")
+					
+					# disc_model = train_disc_model(model_type=args.end_model,
+					# 							  xs_tr=xs_tr,
+					# 							  ys_tr_soft=ys_tr_soft,
+					# 							  ys_tr_hard=ys_tr,
+					# 							  valid_dataset=valid_dataset,
+					# 							  soft_training=args.use_soft_labels,
+					# 							  tune_end_model=args.tune_end_model,
+					# 							  tune_metric=args.tune_metric,
+					# 							  seed=seed)
+					# end_train_end_time = time.time()
+					# logger.warning("end training end_model...")
+					# # evaluate end model performance
+
+					# logger.warning("start predicting using end model")
+					# end_predict_start_time = time.time()
+					# logger.warning("test.dataset_features")
+					# logger.warning(test_dataset.features)
+					# test_preds = disc_model.predict(test_dataset.features)
+					# # 255*# of instance 
+					# runs_and_lfs[run]['iteration_stats'][t+1]['test_preds'] = gt_test_labels
+					# gt_test_labels = np.array(test_dataset.labels)
+					# test_stats = evaluate_labels(gt_test_labels, test_preds, n_class=test_dataset.n_class)
+					# test_perf = evaluate_disc_model(disc_model, test_dataset)
+
+					# valid_preds = disc_model.predict(valid_dataset.features)
+					# logger.warning("valid preds")
+					# logger.warning(valid_preds)
+					# valid_stats = evaluate_labels(gt_valid_labels, valid_preds, n_class=valid_dataset.n_class)
+					# end_predict_end_time = time.time()
+					# logger.warning("end_prediting using end model")
+				# else:
+				# 	test_perf = {"acc": np.nan, "f1": np.nan, "auc": np.nan}
+				# 	valid_stats = {}
+				# 	test_stats = {}
+				# 	test_preds = np.nan
 
 
 				# with open(f'pred_results_on_training_data_{formatted_time}.pkl', 'wb') as file:
@@ -376,7 +408,7 @@ def main(args):
 				# 		"snorkel_pred": ys_tr, "snorkel_soft_pred": ys_tr_soft,
 				# 		"end_model_pred_on_test": test_preds, "test_labels": test_dataset.labels}, file)
 				# runs_and_lfs[]
-				runs_and_lfs[run]['iteration_stats'][t+1] = {'accuracies':{	"gt_labels": gt_train_labels, 
+				runs_and_lfs[run]['iteration_stats'][t+1]['intermediate_results'] = {'accuracies':{	"gt_labels": gt_train_labels, 
 				"snorkel_pred": snorkel_ys_tr, "snorkel_soft_pred": snorkel_ys_tr_soft,
 				"end_model_pred_on_test": test_preds, "test_labels": test_dataset.labels}, 'agent_label_stats': lf_agent.label_stats}
 				runs_and_lfs[run]['iteration_stats'][t+1]['cur_lfs'] = copy.deepcopy(lfs)
@@ -386,89 +418,19 @@ def main(args):
 				runs_and_lfs[run]['iteration_stats'][t+1]['run_time_endmodel_fit']=end_train_end_time - end_train_start_time
 				runs_and_lfs[run]['iteration_stats'][t+1]['run_time_endmodel_predict']=end_predict_end_time - end_predict_start_time
 				runs_and_lfs[run]['iteration_stats'][t+1]['run_time_grid_search'] = grid_search_end-grid_search_start
-
-				cur_result = {
-					"num_query": t+1,
-					"lf_num": len(lfs),
-					"lf_acc_avg": lf_train_stats["lf_acc_avg"],
-					"lf_cov_avg": lf_train_stats["lf_cov_avg"],
-					"response_acc": response_acc,
-					"train_precision": train_label_stats["accuracy"],
-					"train_coverage": train_label_stats["coverage"],
-					"test_acc": test_perf["acc"],
-					"test_f1": test_perf["f1"],
-					"test_auc": test_perf["auc"]
-				}
-				runs_and_lfs[run]['iteration_stats'][t+1]['stats'] = cur_result
-				if args.early_stop:
-					if args.tune_metric == "f1":
-						valid_perf = valid_stats["f1"]
-					else:
-						valid_perf = valid_stats["acc"]
-					if valid_perf > best_valid_perf:
-						best_valid_perf = valid_perf
-						tolerance = 0
-					else:
-						tolerance += 1
-						if tolerance >= 3:
-							break
-
-				if args.save_wandb:
-					wandb.log(cur_result)
-
-				if args.display:
-					print(f"After {t+1} iterations:")
-					print("Train LF stats:")
-					pprint.pprint(lf_train_stats)
-					print("Valid LF stats:")
-					pprint.pprint(lf_val_stats)
-					print("Train label stats (label model output):")
-					pprint.pprint(train_label_stats)
-					print("Valid label stats (label model output):")
-					pprint.pprint(valid_label_stats)
-					print("Valid prediction stats (end model output):")
-					pprint.pprint(valid_stats)
-					print("Test prediction stats (end model output):")
-					pprint.pprint(test_stats)
-			# exit()
-		if args.save_wandb:
-			wandb.run.summary["num_query"] = t+1
-			wandb.run.summary["lf_num"] = len(lfs)
-			wandb.run.summary["response_acc"] = response_acc
-			response_freq = np.mean(np.array(response_labels) != -1)
-			wandb.run.summary["response_freq"] = response_freq
-
-			if len(lfs) > 0:
-				wandb.run.summary["lf_acc_avg"] = lf_train_stats["lf_acc_avg"]
-				wandb.run.summary["lf_cov_avg"] = lf_train_stats["lf_cov_avg"]
-				wandb.run.summary["lf_overlap_avg"] = lf_train_stats["lf_overlap_avg"]
-				wandb.run.summary["lf_conflict_avg"] = lf_train_stats["lf_conflict_avg"]
-			else:
-				wandb.run.summary["lf_acc_avg"] = np.nan
-				wandb.run.summary["lf_cov_avg"] = np.nan
-			if label_model is not None:
-				wandb.run.summary["train_precision"] = train_label_stats["accuracy"]
-				wandb.run.summary["train_coverage"] = train_label_stats["coverage"]
-			else:
-				wandb.run.summary["train_precision"] = np.nan
-				wandb.run.summary["train_coverage"] = np.nan
-
-			if disc_model is not None:
-				wandb.run.summary["test_acc"] = test_perf["acc"]
-				wandb.run.summary["test_f1"] = test_perf["f1"]
-				wandb.run.summary["test_auc"] = test_perf["auc"]
-			else:
-				wandb.run.summary["test_acc"] = np.nan
-				wandb.run.summary["test_f1"] = np.nan
-				wandb.run.summary["test_auc"] = np.nan
-
-			wandb.finish()
-		runs_and_lfs[run]['full_lfs'] = lfs
-		runs_and_lfs[run]['full_raw_lfs'] = raw_lfs
-		overall_runtime_end = time.time()
-		runs_and_lfs[run]['overall_run_time'] = overall_runtime_end - overall_runtime_start
-	with open(f'runs_and_lfs_{formatted_time}.pkl', 'wb') as file:
-		pickle.dump(runs_and_lfs, file)
+				runs_and_lfs[run]['iteration_stats'][t+1]['run_time_llm_response_and_gen_lf'] = llm_response_time
+				runs_and_lfs[run]['iteration_stats'][t+1]['test_preds'] =  test_preds
+				runs_and_lfs[run]['iteration_stats'][t+1]['gt_test_labels'] = gt_test_labels
+				runs_and_lfs[run]['full_lfs'] = lfs
+				runs_and_lfs[run]['full_raw_lfs'] = raw_lfs
+				runs_and_lfs[run]['end_model_input'] = end_model_input_dict
+				overall_runtime_end = time.time()
+				runs_and_lfs[run]['iteration_stats'][t+1]['stats'] = {'lf_train_stats': lf_train_stats,
+											'lf_val_stats':lf_val_stats,
+											'valid_label_stats':valid_label_stats}
+				runs_and_lfs[run]['overall_run_time'] = overall_runtime_end - overall_runtime_start
+				with open(f'logs/runs_and_lfs_{args.log_name}_{formatted_time}.pkl', 'wb') as file:
+					pickle.dump(runs_and_lfs, file)
 
 
 if __name__ == '__main__':
@@ -510,6 +472,9 @@ if __name__ == '__main__':
 	parser.add_argument("--lf-llm-model", type=str, default="gpt-3.5-turbo-0613")
 	parser.add_argument("--example-per-class", type=int, default=1)
 	parser.add_argument("--sample-instance-per-class", type=int, default=1) 
+	parser.add_argument("--limited-sys-instance", action='store_true')
+	parser.add_argument("--sys-limit-cnt", type=int, default=10)
+	parser.add_argument("--user-provide-instance-label", action='store_true')
 		# added for uniform sampling in prompt selection
 	parser.add_argument("--return-explanation", action="store_true")
 	parser.add_argument("--example-selection", type=str, default="random", choices=["random", "neighbor"])
